@@ -113,30 +113,98 @@ BCA is a corporate and consumer transaction bank — it does not have customer c
 
 ---
 
-## 5. Valuation Pulse
+## 5. Valuation and Target Price
 
 ### Current multiples (as of 2026-06-06, price IDR 5,075)
 
 | Multiple | BBCA | Context |
 |---|---|---|
 | P/E (trailing) | ~12.7x | vs. 10-year historical average ~24.4x; sector avg ~13.3x |
-| P/BV | ~2.5x (est.) | "147% premium to book" per search; vs. historical 3–5x |
+| P/BV | ~2.5x (est.) | vs. historical 3–5x range |
 | Dividend yield | ~6.2% | vs. ~3.6% sector average |
 | EPS growth (NTM consensus) | +24% (3-yr avg, Simply Wall St) | – |
 
-BBCA is trading at the lowest P/E in at least five years and near a 5-year low in absolute price terms. The stock fell from its all-time high of IDR 10,950 in 4Q 2024 to IDR 5,075 by June 2026 — a drawdown of approximately 54% from peak. This compresses the historical premium to earnings significantly below its long-run norm.
+BBCA is trading at the lowest P/E in at least five years and near a 5-year low in absolute price terms. The stock fell from its all-time high of IDR 10,950 in 4Q 2024 to IDR 5,075 by June 2026 — a drawdown of approximately 54% from peak.
 
-### Analyst consensus (23 analysts)
+---
+
+### Target Price Derivation
+
+#### Key inputs
+
+| Input | Value | Source / Rationale |
+|---|---|---|
+| FY25 EPS (actual) | Rp 467 | BCA FY25 results |
+| FY26E EPS | Rp 495 | ~6% growth: mgmt 10–11% loan volume, NIM 5.4%, credit cost 40–50 bps |
+| FY25 BVPS (est.) | Rp 2,030 | Price IDR 5,075 ÷ P/BV 2.5x |
+| FY26E BVPS | Rp 2,152 | BVPS × (1 + ROE × retention) = 2,030 × (1 + 24.1% × 25%) |
+| FY26E DPS | Rp 371 | 75% payout of FY26E EPS (mgmt guidance) |
+| Cost of equity (CoE) | 12.5% | CAPM: Indonesia 10yr ~7% + 0.9β × 6% ERP |
+| Terminal growth (g) | 6.0% | Long-run Indonesia nominal GDP ~5% + franchise premium |
+
+---
+
+#### Method 1 — Forward P/E (weight: 40%)
+
+| Scenario | Multiple | FY26E EPS (Rp) | Target (IDR) | Implied upside |
+|---|---|---|---|---|
+| Bear | 11x | 495 | 5,445 | +7% |
+| Base | 16x | 495 | 7,920 | +56% |
+| Bull | 22x | 495 | 10,890 | +115% |
+
+*Rationale:* Base of 16x sits midway between the current depressed 12.7x and historical 24.4x average, applying a macro/MSCI discount. Bear assumes no re-rating (current multiple holds). Bull assumes MSCI risk resolves and BI pivots dovish, compressing the multiple back toward historical norms.
+
+---
+
+#### Method 2 — Price-to-Book (weight: 35%)
+
+| Scenario | P/BV | FY26E BVPS (Rp) | Target (IDR) | Implied upside |
+|---|---|---|---|---|
+| Bear | 2.5x | 2,152 | 5,380 | +6% |
+| Base | 3.5x | 2,152 | 7,532 | +48% |
+| Bull | 4.5x | 2,152 | 9,684 | +91% |
+
+*Justified P/BV (Gordon Growth model):* (ROE − g) / (CoE − g) = (24.1% − 6%) / (12.5% − 6%) = **2.78x** — the analytical floor. The base target of 3.5x adds a franchise premium consistent with BCA's structural CASA moat and superior deposit network; this remains below the historical 3–5x range. Bear applies no franchise premium. Bull targets the midpoint of historical range.
+
+---
+
+#### Method 3 — Dividend Discount Model (weight: 25%)
+
+| Input | Value |
+|---|---|
+| FY26E DPS | Rp 371 |
+| CoE | 12.5% |
+| Terminal growth (g) | 6.0% |
+| **DDM intrinsic value** | **Rp 371 / (12.5% − 6.0%) = IDR 5,708** |
+
+*Note:* The DDM produces a conservative floor value, reflecting the single-stage Gordon assumption. It is most sensitive to the terminal growth rate; at g = 7% (if Indonesia re-accelerates), IDR value rises to IDR 6,800.
+
+---
+
+#### Weighted average target
+
+| Scenario | P/E (40%) | P/BV (35%) | DDM (25%) | **Blended target** | **Upside** |
+|---|---|---|---|---|---|
+| Bear | 5,445 | 5,380 | 5,708 | **5,500** | **+8%** |
+| Base | 7,920 | 7,532 | 5,708 | **7,200** | **+42%** |
+| Bull | 10,890 | 9,684 | 5,708 | **9,000** | **+77%** |
+
+> **12-month base case price target: IDR 7,200**
+> Bear case floor: IDR 5,500 | Bull case ceiling: IDR 9,000
+
+The base case embeds a partial re-rating (12.7x → 16x P/E; 2.5x → 3.5x P/BV) contingent on macro stabilisation, MSCI EM status reaffirmation, and 2Q26 NIM holding at ≥5.4%. The DDM acts as a valuation anchor and keeps the blended base below the sell-side average of IDR 9,946, appropriately reflecting macro uncertainty not fully priced in broker models.
+
+---
+
+### Analyst consensus (24 analysts)
 
 - Rating: **Strong Buy** — 24 Buy, 0 Hold, 0 Sell
 - Average 12-month target: IDR 9,946 (implied upside: +96% from IDR 5,075)
 - High target: IDR 11,700 | Low target: IDR 7,600
 
-**Note:** The wide dispersion between current price (IDR 5,075) and the low analyst target (IDR 7,600) implies even the most conservative analysts embed a major re-rating. The gap between price and consensus is near-unprecedented for a high-quality EM bank of this standing.
+Our base case of IDR 7,200 is deliberately conservative relative to the street average, sitting near the bottom of the sell-side range. We apply a larger macro discount than consensus owing to: (1) the post-guidance BI 50 bps surprise hike not yet fully reflected in models; (2) MSCI reclassification risk as a live event, not a tail; (3) the DDM anchor reflecting the cost of capital correctly priced for an EM bank with currency risk.
 
-**DCF/NPV:** No DCF was run in this cycle. Delta not dispatched; NIM guidance and growth forecasts are sourced from management, not independently modelled. Flag for Delta if a full intrinsic-value model is required.
-
-**Sources:** Alpha Spread; Simply Wall St; Investing.com consensus; IDNFinancials; Yahoo Finance.
+**Sources:** Alpha Spread; Simply Wall St; Investing.com consensus; IDNFinancials; Yahoo Finance. Target price model constructed by Alpha research cycle, 2026-06-07.
 
 ---
 

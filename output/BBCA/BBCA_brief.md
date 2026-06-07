@@ -44,6 +44,18 @@ The BBCA bear case is coherent and should not be dismissed as noise. The BI surp
 
 ---
 
+## Target Price
+
+| Scenario | 12-month target | Upside from IDR 5,075 | Key condition |
+|---|---|---|---|
+| **Bear** | **IDR 5,500** | **+8%** | NIM breaks below 5.3%; MSCI downgrade to frontier |
+| **Base** | **IDR 7,200** | **+42%** | NIM holds ≥5.4%; MSCI EM status reaffirmed; BI holds/cuts |
+| **Bull** | **IDR 9,000** | **+77%** | NIM re-widens; loan growth hits 10%+; macro stabilises |
+
+*Methodology: blended P/E (40%, 16x FY26E EPS Rp495), P/BV (35%, 3.5x FY26E BVPS Rp2,152), DDM (25%, CoE 12.5%, g 6.0%). Base case is deliberately below the sell-side avg of IDR 9,946 to account for MSCI reclassification risk and the May 2026 BI hike not yet in consensus models.*
+
+---
+
 ## Key Catalysts to Watch
 
 **Bull:** (1) MSCI reaffirms Indonesia EM status in June 2026 review; (2) rupiah stabilises and BI signals rate hold/cut; (3) 2Q26 NIM holds at 5.4%+; (4) loan growth reaches double digits in 2H26.
