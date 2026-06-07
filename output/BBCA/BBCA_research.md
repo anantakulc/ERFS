@@ -121,70 +121,78 @@ BCA is a corporate and consumer transaction bank — it does not have customer c
 |---|---|---|
 | P/BV (current) | ~2.5x | vs. historical 3–5x range |
 | Dividend yield | ~6.2% | vs. ~3.6% sector average |
-| ROE | 24.1% (FY25) | highest among large Indonesian banks |
+| ROE (1Q26 annualised) | 21.7% | per Goldman Sachs; down from 24.1% FY25 |
 
 ---
 
 ### GGM-Justified P/BV Target Price
 
-For banks, the theoretically correct valuation anchor is the **Gordon Growth Model (GGM)-derived justified P/BV ratio**. This captures the fundamental bank-specific drivers directly: return on equity, cost of equity, and sustainable growth.
+For banks, the theoretically correct valuation anchor is the **Gordon Growth Model (GGM)-derived justified P/BV ratio**. This is also the primary framework used by the covering brokers cited here: UBS explicitly labels it "Gordon Growth Model"; Macquarie uses GGM for all Indonesia bank intrinsic value work; GS uses a 3-stage DDM which converges to a GGM in the terminal stage.
 
 **Formula:** Justified P/BV = (ROE − g) / (CoE − g)
-**Growth rate:** g = ROE × (1 − payout ratio) — internally consistent with the ROE assumption.
-
-#### Model inputs
-
-| Input | Value | Rationale |
-|---|---|---|
-| FY26E BVPS | Rp 2,152 | FY25 BVPS ~Rp 2,030 (price ÷ P/BV 2.5x) × (1 + 24.1% × 25% retention) |
-| Payout ratio | 75% | Management guidance for FY26 |
-| Beta | 0.90 | Large-cap defensive bank |
-| Indonesia risk-free rate | 7.0% | IDR-denominated 10yr government bond |
-| Equity risk premium (ERP) | 6.0% | EM premium for Indonesia |
-| Cost of Equity (CoE) base | **12.5%** | CAPM: 7.0% + 0.90 × 6.0% |
+**Growth rate:** g = ROE × (1 − payout ratio) — derived endogenously for internal consistency.
 
 ---
 
-#### Scenario analysis
+#### Model inputs — broker-sourced vs. our model
 
-Each scenario varies the two key inputs — **ROE** (captures NIM/credit quality outlook) and **CoE** (captures macro/MSCI risk premium). Growth rate g is derived endogenously from ROE × 25% retention.
+| Input | Our model (conservative) | UBS (Apr 2026) | GS (Apr 2026) |
+|---|---|---|---|
+| Sustainable ROE | 22% (base) | 19.5% | 21.7% (1Q26 actual) |
+| Payout ratio | 75% | mgmt guidance | mgmt guidance |
+| Beta | 0.90 | 0.90 | n/a (uses DDM) |
+| Risk-free rate | 7.0% | 6.75% | n/a |
+| Cost of Equity (CoE) | **12.5%** | **~11.4% (implied)** | n/a |
+| Terminal growth (g) | ROE × 25% | 8.5% | n/a |
+| FY26E BVPS | Rp 2,152 | ~Rp 2,152 | n/a |
+| **12m Price Target** | **see below** | **Rp 9,800** | **Rp 8,100** |
 
-| Scenario | ROE | g = ROE×25% | CoE | **Justified P/BV** | FY26E BVPS | **Target price** | **Upside** |
+*UBS implied CoE derived from their stated inputs: PT Rp9,800 = 3.8x 2027E BVPS ~Rp2,579, solving (ROE-g)/(CoE-g) = 3.8x with ROE 19.5%, g 8.5% implies CoE ~11.4%. UBS's higher terminal growth (8.5% vs our 5.5%) reflects a longer-run Indonesia nominal GDP + franchise expansion view.*
+
+---
+
+#### Scenario analysis — our GGM
+
+Each scenario varies the two key inputs: **ROE** (NIM/credit cycle outlook) and **CoE** (macro/MSCI risk premium). Growth rate g derived from ROE x 25% retention, consistent with 75% payout guidance.
+
+| Scenario | ROE | g = ROE x 25% | CoE | **Justified P/BV** | FY26E BVPS | **Target** | **Upside** |
 |---|---|---|---|---|---|---|---|
-| **Bear** | 19% | 4.75% | 14.0% | **(19%−4.75%)/(14%−4.75%) = 1.54x** | 2,152 | **IDR 3,300** | **−35%** |
-| **Base** | 22% | 5.5% | 12.5% | **(22%−5.5%)/(12.5%−5.5%) = 2.36x** | 2,152 | **IDR 5,100** | **+0%** |
-| **Bull** | 24% | 6.0% | 11.0% | **(24%−6%)/(11%−6%) = 3.60x** | 2,152 | **IDR 7,700** | **+52%** |
+| **Bear** | 19% | 4.75% | 14.0% | (14.25%)/(9.25%) = **1.54x** | 2,152 | **IDR 3,300** | **-35%** |
+| **Base** | 22% | 5.5% | 12.5% | (16.5%)/(7.0%) = **2.36x** | 2,152 | **IDR 5,100** | **~flat** |
+| **Re-rating** | 22% | 5.5% | 11.4% | (16.5%)/(5.9%) = **2.80x** | 2,152 | **IDR 6,000** | **+18%** |
+| **Bull** | 24% | 6.0% | 11.0% | (18.0%)/(5.0%) = **3.60x** | 2,152 | **IDR 7,700** | **+52%** |
 
-> **12-month base case price target: IDR 5,100 (+~0% from IDR 5,075)**
-> Bear case floor: IDR 3,300 (−35%) | Bull case ceiling: IDR 7,700 (+52%)
+> **12-month base case price target: IDR 5,100** (conservative, CoE 12.5%)
+> Re-rating case (CoE normalises to broker-level 11.4%): **IDR 6,000 (+18%)**
+> Bear floor: IDR 3,300 (-35%) | Bull ceiling: IDR 7,700 (+52%)
 
 ---
 
 #### What the GGM is telling us
 
-The base case result — a target nearly equal to the current price — is itself a finding: **the stock is approximately fairly valued today under base-case ROE and CoE assumptions**. It is not deeply cheap on a GGM basis at current macro risk premiums.
+**The base case at current macro risk premiums is ~flat.** This is the honest GGM answer at a 12.5% CoE — the stock is approximately fairly valued today, not deeply cheap.
 
-The upside case is *not* about fundamental earnings growth — it is about **re-rating driven by CoE compression**. If the macro risk premium normalises (MSCI EM reaffirmed, rupiah stabilises, BI pivots) and the discount rate falls from 12.5% to 11%, the justified multiple expands from 2.36x to 3.60x — a 53% re-rating on a roughly unchanged BVPS. This is the structural options-like payoff embedded in BBCA at current prices.
+**The key variable is CoE, not ROE.** Our conservative CoE of 12.5% reflects the post-BI-hike risk-free rate (~7%) plus an elevated MSCI/currency risk premium. UBS uses 11.4% CoE (risk-free 6.75%), which alone lifts our base target from IDR 5,100 to IDR 6,000 with identical ROE and growth assumptions. The full gap to broker targets (Rp8,100-9,800) reflects three additional layers: (1) multi-stage growth assumptions; (2) higher terminal growth rate (8.5% vs our 5.5%); (3) use of 2027 rather than 2026 book value.
 
-The downside case requires a simultaneous deterioration in both ROE (NIM break + credit cycle) and CoE (rupiah crisis + MSCI downgrade), which is the specific scenario Kilo's bear thesis identifies as the coherent risk.
+**Market-implied check.** At IDR 5,075 (P/BV ~2.5x), solving GGM at CoE 12.5%: market prices ROE ~22.25% — virtually identical to our base case (22%) and consistent with 1Q26 actual ROE of 21.7% per Goldman Sachs. The market is not pricing in a crisis; it is pricing CoE normalisation risk.
 
----
-
-#### Market-implied check
-
-At the current price of IDR 5,075 (P/BV ≈ 2.5x), the market is implicitly pricing **ROE ≈ 22.25%** (solving the GGM at CoE 12.5%, g = ROE × 25%: 2.5 = (ROE − g)/(12.5% − g) → ROE ≈ 22.25%). This is ~190 bps below the FY25 actual of 24.1%, consistent with the market pricing in a moderate ROE compression from NIM headwinds — but not a crisis.
+**The embedded option.** If MSCI EM status is reaffirmed and BI pivots to cuts (rupiah stabilises), CoE plausibly returns to 11-11.5%. At CoE 11%, justified P/BV jumps from 2.36x to 3.60x — a 53% re-rating with no change in ROE or BVPS. This CoE compression option is what brokers are pricing at Rp8,100-9,800; it is not in current prices.
 
 ---
 
-### Analyst consensus (24 analysts)
+#### Broker price targets — summary
 
-- Rating: **Strong Buy** — 24 Buy, 0 Hold, 0 Sell
-- Average 12-month target: IDR 9,946 (implied upside: +96% from IDR 5,075)
-- High target: IDR 11,700 | Low target: IDR 7,600
+| Broker | Date | Rating | 12m PT | Price at report | Upside | Method |
+|---|---|---|---|---|---|---|
+| Goldman Sachs | Apr 2026 | Buy | Rp 8,100 | Rp 6,425 | +26% | 3-stage DDM |
+| UBS | Apr 2026 | Buy | Rp 9,800 | Rp 6,425 | +53% | GGM (ROE 19.5%, g 8.5%, CoE ~11.4%) |
+| Macquarie | May 2026 | Outperform | n/a | Rp 5,300 | — | GGM (surplus-equity adjusted) |
+| Goldman Sachs | Jan 2026 | Buy | Rp 9,800 | Rp 7,500 | +31% | 3-stage DDM |
+| **Our model** | **Jun 2026** | — | **Rp 5,100** | **Rp 5,075** | **~flat** | **GGM (CoE 12.5%)** |
 
-The sell-side consensus embeds a CoE significantly below 12.5% and/or ROE normalising above 24% — assumptions that were valid before the May 2026 BI surprise hike and MSCI freeze. Our GGM-derived base case of IDR 5,100 uses more conservative current-market inputs and deliberately sits well below the sell-side average. The gap between the two reflects the macro risk premium that consensus has not yet fully incorporated.
+*All broker targets have drifted further above current prices as the stock fell from Rp6,425 (April) to Rp5,075 (June 2026). No broker has downgraded. The broker-to-current-price gap has widened since the May BI hike.*
 
-**Sources:** Alpha Spread; Simply Wall St; Investing.com consensus; IDNFinancials; Yahoo Finance. GGM model constructed by Alpha research cycle, 2026-06-07.
+**Sources:** Goldman Sachs Equity Research 24-Apr-2026 (Melissa Kuang, CFA); Goldman Sachs Equity Research 27-Jan-2026; UBS Global Research 23-Apr-2026 (Joshua Tanja, CFA); Macquarie Equity Research 18-May-2026. GGM model by Alpha research cycle, 2026-06-07.
 
 ---
 

@@ -46,17 +46,19 @@ The BBCA bear case is coherent and should not be dismissed as noise. The BI surp
 
 ## Target Price — GGM Justified P/BV
 
-**Formula:** Justified P/BV = (ROE − g) / (CoE − g), where g = ROE × (1 − payout ratio)
-
-**Fixed inputs:** FY26E BVPS Rp 2,152 | Payout 75% | CoE base 12.5% (CAPM: 7% risk-free + 0.9β × 6% ERP)
+**Formula:** Justified P/BV = (ROE − g) / (CoE − g), where g = ROE × 25% retention (75% payout)
+**FY26E BVPS: Rp 2,152** | Validated by brokers: GS uses 1Q26 actual ROE of 21.7%; UBS uses sustainable ROE 19.5%, CoE ~11.4%
 
 | Scenario | ROE | g | CoE | Justified P/BV | **12m Target** | **Upside** |
 |---|---|---|---|---|---|---|
-| Bear | 19% | 4.75% | 14.0% | 1.54x | **IDR 3,300** | **−35%** |
+| Bear | 19% | 4.75% | 14.0% | 1.54x | **IDR 3,300** | **-35%** |
 | Base | 22% | 5.5% | 12.5% | 2.36x | **IDR 5,100** | **~flat** |
+| Re-rating | 22% | 5.5% | 11.4% | 2.80x | **IDR 6,000** | **+18%** |
 | Bull | 24% | 6.0% | 11.0% | 3.60x | **IDR 7,700** | **+52%** |
 
-**Key insight:** The base case (~flat) is itself a finding — BBCA is approximately fairly valued at current macro risk premiums. The bull case is a **CoE re-rating story**, not an earnings growth story: if MSCI EM status is reaffirmed and BI pivots, the discount rate falls from 12.5% → 11% and the justified multiple expands from 2.36x → 3.60x. The market is currently pricing ROE of ~22.25% (implied by 2.5x P/BV at 12.5% CoE) — a ~190bps discount to the FY25 actual of 24.1%.
+**Broker targets for reference:** GS Rp8,100 Buy (3-stage DDM) | UBS Rp9,800 Buy (GGM, CoE 11.4%) | Macquarie Outperform (GGM, surplus-equity adjusted). All written at Rp6,425 (Apr 2026); stock has since fallen further to Rp5,075.
+
+**Key insight:** The base case (~flat) is the honest GGM answer at current risk premiums — the stock is fairly valued, not deeply cheap. The upside is a **CoE compression story**: if MSCI EM reaffirmed + BI pivots, CoE drops 12.5% → 11%, and P/BV jumps 2.36x → 3.60x (+53%) with no change in ROE. That is the option the market is not pricing.
 
 ---
 
