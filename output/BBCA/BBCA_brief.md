@@ -44,15 +44,19 @@ The BBCA bear case is coherent and should not be dismissed as noise. The BI surp
 
 ---
 
-## Target Price
+## Target Price — GGM Justified P/BV
 
-| Scenario | 12-month target | Upside from IDR 5,075 | Key condition |
-|---|---|---|---|
-| **Bear** | **IDR 5,500** | **+8%** | NIM breaks below 5.3%; MSCI downgrade to frontier |
-| **Base** | **IDR 7,200** | **+42%** | NIM holds ≥5.4%; MSCI EM status reaffirmed; BI holds/cuts |
-| **Bull** | **IDR 9,000** | **+77%** | NIM re-widens; loan growth hits 10%+; macro stabilises |
+**Formula:** Justified P/BV = (ROE − g) / (CoE − g), where g = ROE × (1 − payout ratio)
 
-*Methodology: blended P/E (40%, 16x FY26E EPS Rp495), P/BV (35%, 3.5x FY26E BVPS Rp2,152), DDM (25%, CoE 12.5%, g 6.0%). Base case is deliberately below the sell-side avg of IDR 9,946 to account for MSCI reclassification risk and the May 2026 BI hike not yet in consensus models.*
+**Fixed inputs:** FY26E BVPS Rp 2,152 | Payout 75% | CoE base 12.5% (CAPM: 7% risk-free + 0.9β × 6% ERP)
+
+| Scenario | ROE | g | CoE | Justified P/BV | **12m Target** | **Upside** |
+|---|---|---|---|---|---|---|
+| Bear | 19% | 4.75% | 14.0% | 1.54x | **IDR 3,300** | **−35%** |
+| Base | 22% | 5.5% | 12.5% | 2.36x | **IDR 5,100** | **~flat** |
+| Bull | 24% | 6.0% | 11.0% | 3.60x | **IDR 7,700** | **+52%** |
+
+**Key insight:** The base case (~flat) is itself a finding — BBCA is approximately fairly valued at current macro risk premiums. The bull case is a **CoE re-rating story**, not an earnings growth story: if MSCI EM status is reaffirmed and BI pivots, the discount rate falls from 12.5% → 11% and the justified multiple expands from 2.36x → 3.60x. The market is currently pricing ROE of ~22.25% (implied by 2.5x P/BV at 12.5% CoE) — a ~190bps discount to the FY25 actual of 24.1%.
 
 ---
 

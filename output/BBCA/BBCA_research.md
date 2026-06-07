@@ -119,80 +119,60 @@ BCA is a corporate and consumer transaction bank — it does not have customer c
 
 | Multiple | BBCA | Context |
 |---|---|---|
-| P/E (trailing) | ~12.7x | vs. 10-year historical average ~24.4x; sector avg ~13.3x |
-| P/BV | ~2.5x (est.) | vs. historical 3–5x range |
+| P/BV (current) | ~2.5x | vs. historical 3–5x range |
 | Dividend yield | ~6.2% | vs. ~3.6% sector average |
-| EPS growth (NTM consensus) | +24% (3-yr avg, Simply Wall St) | – |
-
-BBCA is trading at the lowest P/E in at least five years and near a 5-year low in absolute price terms. The stock fell from its all-time high of IDR 10,950 in 4Q 2024 to IDR 5,075 by June 2026 — a drawdown of approximately 54% from peak.
+| ROE | 24.1% (FY25) | highest among large Indonesian banks |
 
 ---
 
-### Target Price Derivation
+### GGM-Justified P/BV Target Price
 
-#### Key inputs
+For banks, the theoretically correct valuation anchor is the **Gordon Growth Model (GGM)-derived justified P/BV ratio**. This captures the fundamental bank-specific drivers directly: return on equity, cost of equity, and sustainable growth.
 
-| Input | Value | Source / Rationale |
+**Formula:** Justified P/BV = (ROE − g) / (CoE − g)
+**Growth rate:** g = ROE × (1 − payout ratio) — internally consistent with the ROE assumption.
+
+#### Model inputs
+
+| Input | Value | Rationale |
 |---|---|---|
-| FY25 EPS (actual) | Rp 467 | BCA FY25 results |
-| FY26E EPS | Rp 495 | ~6% growth: mgmt 10–11% loan volume, NIM 5.4%, credit cost 40–50 bps |
-| FY25 BVPS (est.) | Rp 2,030 | Price IDR 5,075 ÷ P/BV 2.5x |
-| FY26E BVPS | Rp 2,152 | BVPS × (1 + ROE × retention) = 2,030 × (1 + 24.1% × 25%) |
-| FY26E DPS | Rp 371 | 75% payout of FY26E EPS (mgmt guidance) |
-| Cost of equity (CoE) | 12.5% | CAPM: Indonesia 10yr ~7% + 0.9β × 6% ERP |
-| Terminal growth (g) | 6.0% | Long-run Indonesia nominal GDP ~5% + franchise premium |
+| FY26E BVPS | Rp 2,152 | FY25 BVPS ~Rp 2,030 (price ÷ P/BV 2.5x) × (1 + 24.1% × 25% retention) |
+| Payout ratio | 75% | Management guidance for FY26 |
+| Beta | 0.90 | Large-cap defensive bank |
+| Indonesia risk-free rate | 7.0% | IDR-denominated 10yr government bond |
+| Equity risk premium (ERP) | 6.0% | EM premium for Indonesia |
+| Cost of Equity (CoE) base | **12.5%** | CAPM: 7.0% + 0.90 × 6.0% |
 
 ---
 
-#### Method 1 — Forward P/E (weight: 40%)
+#### Scenario analysis
 
-| Scenario | Multiple | FY26E EPS (Rp) | Target (IDR) | Implied upside |
-|---|---|---|---|---|
-| Bear | 11x | 495 | 5,445 | +7% |
-| Base | 16x | 495 | 7,920 | +56% |
-| Bull | 22x | 495 | 10,890 | +115% |
+Each scenario varies the two key inputs — **ROE** (captures NIM/credit quality outlook) and **CoE** (captures macro/MSCI risk premium). Growth rate g is derived endogenously from ROE × 25% retention.
 
-*Rationale:* Base of 16x sits midway between the current depressed 12.7x and historical 24.4x average, applying a macro/MSCI discount. Bear assumes no re-rating (current multiple holds). Bull assumes MSCI risk resolves and BI pivots dovish, compressing the multiple back toward historical norms.
+| Scenario | ROE | g = ROE×25% | CoE | **Justified P/BV** | FY26E BVPS | **Target price** | **Upside** |
+|---|---|---|---|---|---|---|---|
+| **Bear** | 19% | 4.75% | 14.0% | **(19%−4.75%)/(14%−4.75%) = 1.54x** | 2,152 | **IDR 3,300** | **−35%** |
+| **Base** | 22% | 5.5% | 12.5% | **(22%−5.5%)/(12.5%−5.5%) = 2.36x** | 2,152 | **IDR 5,100** | **+0%** |
+| **Bull** | 24% | 6.0% | 11.0% | **(24%−6%)/(11%−6%) = 3.60x** | 2,152 | **IDR 7,700** | **+52%** |
 
----
-
-#### Method 2 — Price-to-Book (weight: 35%)
-
-| Scenario | P/BV | FY26E BVPS (Rp) | Target (IDR) | Implied upside |
-|---|---|---|---|---|
-| Bear | 2.5x | 2,152 | 5,380 | +6% |
-| Base | 3.5x | 2,152 | 7,532 | +48% |
-| Bull | 4.5x | 2,152 | 9,684 | +91% |
-
-*Justified P/BV (Gordon Growth model):* (ROE − g) / (CoE − g) = (24.1% − 6%) / (12.5% − 6%) = **2.78x** — the analytical floor. The base target of 3.5x adds a franchise premium consistent with BCA's structural CASA moat and superior deposit network; this remains below the historical 3–5x range. Bear applies no franchise premium. Bull targets the midpoint of historical range.
+> **12-month base case price target: IDR 5,100 (+~0% from IDR 5,075)**
+> Bear case floor: IDR 3,300 (−35%) | Bull case ceiling: IDR 7,700 (+52%)
 
 ---
 
-#### Method 3 — Dividend Discount Model (weight: 25%)
+#### What the GGM is telling us
 
-| Input | Value |
-|---|---|
-| FY26E DPS | Rp 371 |
-| CoE | 12.5% |
-| Terminal growth (g) | 6.0% |
-| **DDM intrinsic value** | **Rp 371 / (12.5% − 6.0%) = IDR 5,708** |
+The base case result — a target nearly equal to the current price — is itself a finding: **the stock is approximately fairly valued today under base-case ROE and CoE assumptions**. It is not deeply cheap on a GGM basis at current macro risk premiums.
 
-*Note:* The DDM produces a conservative floor value, reflecting the single-stage Gordon assumption. It is most sensitive to the terminal growth rate; at g = 7% (if Indonesia re-accelerates), IDR value rises to IDR 6,800.
+The upside case is *not* about fundamental earnings growth — it is about **re-rating driven by CoE compression**. If the macro risk premium normalises (MSCI EM reaffirmed, rupiah stabilises, BI pivots) and the discount rate falls from 12.5% to 11%, the justified multiple expands from 2.36x to 3.60x — a 53% re-rating on a roughly unchanged BVPS. This is the structural options-like payoff embedded in BBCA at current prices.
+
+The downside case requires a simultaneous deterioration in both ROE (NIM break + credit cycle) and CoE (rupiah crisis + MSCI downgrade), which is the specific scenario Kilo's bear thesis identifies as the coherent risk.
 
 ---
 
-#### Weighted average target
+#### Market-implied check
 
-| Scenario | P/E (40%) | P/BV (35%) | DDM (25%) | **Blended target** | **Upside** |
-|---|---|---|---|---|---|
-| Bear | 5,445 | 5,380 | 5,708 | **5,500** | **+8%** |
-| Base | 7,920 | 7,532 | 5,708 | **7,200** | **+42%** |
-| Bull | 10,890 | 9,684 | 5,708 | **9,000** | **+77%** |
-
-> **12-month base case price target: IDR 7,200**
-> Bear case floor: IDR 5,500 | Bull case ceiling: IDR 9,000
-
-The base case embeds a partial re-rating (12.7x → 16x P/E; 2.5x → 3.5x P/BV) contingent on macro stabilisation, MSCI EM status reaffirmation, and 2Q26 NIM holding at ≥5.4%. The DDM acts as a valuation anchor and keeps the blended base below the sell-side average of IDR 9,946, appropriately reflecting macro uncertainty not fully priced in broker models.
+At the current price of IDR 5,075 (P/BV ≈ 2.5x), the market is implicitly pricing **ROE ≈ 22.25%** (solving the GGM at CoE 12.5%, g = ROE × 25%: 2.5 = (ROE − g)/(12.5% − g) → ROE ≈ 22.25%). This is ~190 bps below the FY25 actual of 24.1%, consistent with the market pricing in a moderate ROE compression from NIM headwinds — but not a crisis.
 
 ---
 
@@ -202,9 +182,9 @@ The base case embeds a partial re-rating (12.7x → 16x P/E; 2.5x → 3.5x P/BV)
 - Average 12-month target: IDR 9,946 (implied upside: +96% from IDR 5,075)
 - High target: IDR 11,700 | Low target: IDR 7,600
 
-Our base case of IDR 7,200 is deliberately conservative relative to the street average, sitting near the bottom of the sell-side range. We apply a larger macro discount than consensus owing to: (1) the post-guidance BI 50 bps surprise hike not yet fully reflected in models; (2) MSCI reclassification risk as a live event, not a tail; (3) the DDM anchor reflecting the cost of capital correctly priced for an EM bank with currency risk.
+The sell-side consensus embeds a CoE significantly below 12.5% and/or ROE normalising above 24% — assumptions that were valid before the May 2026 BI surprise hike and MSCI freeze. Our GGM-derived base case of IDR 5,100 uses more conservative current-market inputs and deliberately sits well below the sell-side average. The gap between the two reflects the macro risk premium that consensus has not yet fully incorporated.
 
-**Sources:** Alpha Spread; Simply Wall St; Investing.com consensus; IDNFinancials; Yahoo Finance. Target price model constructed by Alpha research cycle, 2026-06-07.
+**Sources:** Alpha Spread; Simply Wall St; Investing.com consensus; IDNFinancials; Yahoo Finance. GGM model constructed by Alpha research cycle, 2026-06-07.
 
 ---
 
