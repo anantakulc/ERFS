@@ -85,16 +85,39 @@ Include the subject company as first row. Note what multiple spread implies (dis
 #### Section 11 — Valuation
 Three sub-sections:
 
+**WACC Adjudication (mandatory — run before any DCF)**
+Four-step process:
+1. Compute formula WACC (rf + β × ERP, capital-structure weighted)
+2. Look up sector sanity band from `references/wacc_erp_rates.md`
+3. Compute peer-implied WACC: median CAPM ke across the 7 peers in §10 (each peer: rf + peerβ × ERP, then weight by sector E/V ratio)
+4. Compute market-implied ke ≈ (1 / fwd_PE) + long-run g (use terminal g, NOT short-term consensus growth)
+
+Adjudication rule — choose ONE WACC for the base DCF:
+- Formula WACC **inside** sector band → use formula WACC
+- Formula WACC **above** sector band by ≤150bps → use formula WACC, flag in output
+- Formula WACC **above** sector band by >150bps → diagnose:
+  - If peer-implied WACC is meaningfully lower (>100bps gap): use peer-implied WACC for base case; formula WACC becomes the bear-case discount rate
+  - If near-100% equity structure drives the gap: acceptable — use formula WACC and flag
+  - If beta is distorted (>1.5× without fundamental justification): use sector-median beta, recompute
+- Formula WACC **below** sector band → use sector floor (conservative floor)
+
+Required output box: `formula_wacc | sector_band | peer_implied_wacc | market_implied_ke | **adopted_wacc** | reason (2 sentences max)`
+
+The adopted WACC feeds ALL three DCF scenarios and the blended intrinsic. Never silently use the formula WACC when it falls outside the sector band by >150bps.
+
 **Method 1: DCF — Three Scenarios**
-- Run company-valuation skill for WACC (formula: rf + β × ERP)
-- Include WACC adjudication note if formula output is outside sector sanity range
+- Use the adjudicated WACC (from above) as the base WACC
 - Bull / Base / Bear scenarios: WACC | terminal g | path | implied price
+  - Bull: adopted_wacc − 100bps (peer-implied or sector midpoint), g +50bps
+  - Base: adopted_wacc, g = 2.5%
+  - Bear: formula_wacc (punitive), g = 1.5%
 - Probability-weighted DCF: P(bear) × bear + P(base) × base + P(bull) × bull
 
 **Method 2: Relative (Peer Multiples)**
 - EV/EBITDA, forward P/E, EV/Revenue applied to company financials
 - Use peer median from Section 10
-- Blended relative price
+- Apply to NTM estimates (current fiscal year) AND +1y estimates (next fiscal year)
+- Blended relative price: average of NTM and +1y implied prices
 
 **Method 3: SOTP** (if 2+ material segments with different growth/margin profiles)
 - Per-segment EV using pure-play peer multiples
@@ -102,7 +125,21 @@ Three sub-sections:
 - Note conglomerate discount % vs. current market cap
 
 **Probability-Weighted Synthesis**
-Table: Method | Weight | Implied Price | Weighted Contribution → Blended Target
+Table: Method | Weight | Implied Price | Weighted Contribution → **Blended Intrinsic Value**
+
+The Blended Intrinsic Value uses the adjudicated WACC. It is our internal anchor.
+
+**Adopted Price Target**
+Derive our own 12-month price target as follows:
+1. Start from Blended Intrinsic Value
+2. Cross-check with best forward multiple method (peer median P/E × FY+2E non-GAAP EPS, where FY+2E is ~12 months out at time of writing)
+3. If both are within 15% of each other → adopt the average as target
+4. If they diverge >15% → document why, adopt the more conservative of the two with explicit rationale
+5. Round to nearest $5
+
+State the adopted target as **our** price target. Mention analyst consensus mean separately as a reference point (e.g., "Street consensus: $X"), never as the basis for our target.
+
+The brief must also use this derived target, not any sell-side figure.
 
 #### Section 12 — Bull Case (10 Catalysts)
 One-sentence thesis. Then 10 numbered catalysts, each: specific, sourced, falsifiable. Cover: revenue drivers, margin drivers, balance sheet/capital return, multiple re-rating, sector tailwind. Not a wish list — each must be grounded in current data.
