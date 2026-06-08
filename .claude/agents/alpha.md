@@ -113,11 +113,21 @@ The adopted WACC feeds ALL three DCF scenarios and the blended intrinsic. Never 
   - Bear: formula_wacc (punitive), g = 1.5%
 - Probability-weighted DCF: P(bear) × bear + P(base) × base + P(bull) × bull
 
-**Method 2: Relative (Peer Multiples)**
-- EV/EBITDA, forward P/E, EV/Revenue applied to company financials
-- Use peer median from Section 10
-- Apply to NTM estimates (current fiscal year) AND +1y estimates (next fiscal year)
-- Blended relative price: average of NTM and +1y implied prices
+**Method 2: Relative (Peer Multiples) — NTM Convention**
+Use NTM (next-twelve-months) estimates as the primary anchor — this is market convention for semi/tech.
+Compute three sub-methods and blend:
+
+| Sub-method | Multiple | Applied to | Implied Price |
+|---|---|---|---|
+| NTM P/E | Peer median Fwd P/E | NTM non-GAAP EPS (from estimate-analysis) | = multiple × NTM EPS |
+| NTM EV/EBITDA | Peer median EV/EBITDA | NTM EBITDA (from estimates or extrapolated) | = (multiple × NTM EBITDA − net debt) / shares |
+| NTM EV/Revenue | Peer median EV/Rev | NTM Revenue (from revenue_estimate) | = (multiple × NTM Rev − net debt) / shares |
+
+Blended Relative Price = equal-weight average of the three sub-methods above.
+
+Also compute FY+2E P/E (peer median × FY+2E non-GAAP EPS) as a 12-month forward check and show it separately — do not include it in the blended relative (it is used only for the adopted target cross-check).
+
+**Critical:** Use non-GAAP EPS for P/E multiples (market convention). State the GAAP EPS alongside it and note the delta. Never apply a trailing P/E multiple to trailing GAAP EPS in the relative section — that produces a misleading low number for companies with high amortisation (e.g., post-acquisition).
 
 **Method 3: SOTP** (if 2+ material segments with different growth/margin profiles)
 - Per-segment EV using pure-play peer multiples
@@ -134,7 +144,11 @@ Derive our own 12-month price target as follows:
 1. Start from Blended Intrinsic Value
 2. Cross-check with best forward multiple method (peer median P/E × FY+2E non-GAAP EPS, where FY+2E is ~12 months out at time of writing)
 3. If both are within 15% of each other → adopt the average as target
-4. If they diverge >15% → document why, adopt the more conservative of the two with explicit rationale
+4. If they diverge >15% → **document the divergence explicitly** (table: method | implied price | reason for gap) and allow an analyst override:
+   - State which method is more appropriate given the company's stage and sector convention
+   - Common overrides: (a) high-growth tech where forward P/E is the market-convention anchor; (b) capital-light compounders where FCF yield matters more than book DCF; (c) cyclicals at mid-cycle where SOTP dominates
+   - The override must cite a specific reason, not just "looks reasonable"
+   - After applying the override, blended target = weighted average of methods with analyst-stated weights
 5. Round to nearest $5
 
 State the adopted target as **our** price target. Mention analyst consensus mean separately as a reference point (e.g., "Street consensus: $X"), never as the basis for our target.
