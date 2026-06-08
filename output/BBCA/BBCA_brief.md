@@ -1,79 +1,93 @@
-# BBCA.JK — One-Page Brief
-**PT Bank Central Asia Tbk** | IDX: BBCA | Date: 2026-06-07 | Price: IDR 5,075
+# BBCA.JK — One-Page Investment Brief
+## PT Bank Central Asia Tbk | IDX: BBCA
+**Date:** 8 June 2026 | **Price:** Rp 5,075 | **P/BV:** 2.1x (FY26E) | **Drawdown from ATH:** 54%
 
 ---
 
-## Recommendation in one line
+## One-Line Recommendation
 
-BBCA is a franchise-quality bank trading at a 5-year-low price (IDR 5,075, P/E 12.7x vs. 10-yr avg 24.4x) driven by macro/flows, not fundamentals — the bull case is strong but the macro floor is not yet visible; a patient long with a 2–3 year horizon is appropriate for risk-tolerant EM investors.
-
----
-
-## Bull Case Summary
-
-BCA is Indonesia's most profitable large bank (ROE 24.1% FY25) and the only one with a structurally defensible funding franchise: an 85% CASA ratio (1Q26) across 43 million accounts funds IDR 1,249 trillion in deposits at near-zero cost. This moat is not replicable in a short cycle — it was built over 40 years of infrastructure investment (20,008 ATMs, 1,264 branches, myBCA app). Despite NIM compressing 40 bps YoY to 5.4% in 1Q26 (corporate loan repricing), NII still grew double-digits in 9M25 because volume (+7.7% loans in FY25) offset yield pressure. Net income in 1Q26 was Rp14.68 trillion — up 3.8% YoY, NPL at a well-managed 1.8%, and CAR at 27.0% (sector-highest). At IDR 5,075, the stock offers a 6.2% dividend yield from a 24% ROE bank — historically exceptional. The 54% peak-to-trough decline is attributable to: MSCI freeze on Indonesia inclusion factors (passive forced selling), rupiah weakness (IDR to Rp17,645/USD record low), and JCI falling ~34% YTD in 2026 — all macro/flows factors, not deteriorating fundamentals.
+**Cautious hold / selective entry below Rp 5,000.** Base-case GGM value is Rp 5,565 (2.3x P/BV at 12.8% CoE), offering modest upside; MSCI downgrade risk and post-BI-hike CoE uncertainty cap near-term conviction. Bull re-rating to Rp 7,000–8,100 requires IDR stabilisation and MSCI EM confirmation.
 
 ---
 
-## Bear Case in One Paragraph
+## Bull Summary (Charlie)
 
-The BBCA bear case is coherent and should not be dismissed as noise. The BI surprise 50 bps rate hike to 5.25% in May 2026 — taken to defend a rupiah at a record low — directly threatens NIM guidance: BBCA's 1Q26 NIM of 5.4% was already at the low end of management's 5.4–5.6% FY26 band before this hike. If funding costs rise faster than loan yields reprice, NIM could breach 5.0–5.2%, turning NII growth negative and triggering broad consensus downgrades. Simultaneously, consumer and SME credit quality is deteriorating early: vehicle financing was deliberately cut 19.7% YoY, LAR rose to 5.1%, and consumer/SME NPL drove higher credit cost guidance (40–50 bps for FY26). Indonesia's macro backdrop has deteriorated sharply: Fitch revised the sovereign outlook to Negative in March 2026, BI FX reserves fell to a 2-year low (USD 148.2 billion) after spending USD 8.3 billion defending the rupiah in 1Q26 alone, and Indonesia's fiscal deficit widened materially under Prabowo. The most serious tail risk is the MSCI reclassification scenario: if MSCI downgrades Indonesia from Emerging to Frontier Market status, passive outflows of USD 1.8–13 billion would hit Indonesian equities, with BBCA — the largest constituent — absorbing a disproportionate share. This is a structural multiple-suppression event unrelated to earnings quality. The final structural risk is governance: the Hartono family controls 54.94% of shares through PT Dwimuria Investama Andalan, providing minority shareholders near-zero recourse if family succession (Robert Budi Hartono is in his early 80s) creates strategic uncertainty.
+1. **Structural CASA moat sustains NIM above peers through any rate cycle.** At 85% CASA ratio — industry-leading — BCA's blended funding cost (~1.1%) barely moves when SRBI rates rise, unlike BRI/BNI/BTN. Higher government bond yields post-BI hike actually lift asset yields, with GS modelling NIM recovery to 5.5% in FY27 and 5.9% in FY28 (Goldman Sachs, Melissa Kuang CFA, 24 April 2026).
 
----
+2. **The 54% ATH drawdown is historically anomalous for a franchise delivering stable 21%+ ROE.** BCA printed 1Q26 net profit Rp 14.7tn (+4% YoY), 4% above estimates; NPL coverage 175%; Tier 1 CAR 27%; FY26E dividend yield 5.5% rising to 7.1% in FY28. Current 2.1x P/BV is below the COVID trough (2.5x) and implies a market-priced ROE of ~19.5% — inconsistent with actual performance (Goldman Sachs, 24 April 2026; Macquarie, Jayden Vantarakis, 18 May 2026).
 
-## Key Metrics Snapshot
-
-| Metric | Value | Period |
-|---|---|---|
-| Share price | IDR 5,075 | 2026-06-06 |
-| Market cap | IDR 623.6 trillion (~USD 41.3bn) | 2026-06-06 |
-| Total assets | IDR 1,587 trillion | FY2025 |
-| Net income | IDR 57.54 trillion (FY25) / IDR 14.68 trillion (1Q26) | FY25 / 1Q26 |
-| NIM | 5.7% (FY25) → 5.4% (1Q26) | trend down |
-| CASA ratio | 85% | 1Q26 |
-| NPL (gross) | 1.8% | 1Q26 |
-| LAR | 5.1% | 1Q26 |
-| ROE | 24.1% | FY25 |
-| CAR | 27.0% | 1Q26 (sector-highest) |
-| Loan growth | 7.7% (FY25) / 5.6% (1Q26) | decelerating |
-| P/E (trailing) | ~12.7x | vs. 10-yr avg 24.4x |
-| Dividend yield | ~6.2% | at IDR 5,075 |
-| Analyst consensus | Strong Buy (24/24) | avg target IDR 9,946 |
-| BI-Rate | 5.25% | post-May 2026 hike |
-| IDR/USD | ~17,645 (record low May 2026) | headwind |
+3. **FY27–28 earnings re-acceleration from corporate investment cycle and asset-yield normalisation.** Management cited a robust China-FDI pipeline and infrastructure sectors at the 4Q25 briefing; GS models +12% net income growth in FY27 and +11.6% in FY28. Macquarie identifies ~16% of BCA's market cap as surplus equity being ignored by the market (Macquarie, 18 May 2026, Figure 6).
 
 ---
 
-## Target Price — GGM Justified P/BV
+## Bear Case in One Paragraph (Kilo)
 
-**Formula:** Justified P/BV = (ROE − g) / (CoE − g), where g = ROE × 25% retention (75% payout)
-**FY26E BVPS: Rp 2,152** | Validated by brokers: GS uses 1Q26 actual ROE of 21.7%; UBS uses sustainable ROE 19.5%, CoE ~11.4%
+The 20 May 2026 BI surprise rate hike (+50bps to 5.25%) has not been incorporated into any published broker price target, and it directly raises BCA's cost of equity while threatening to eventually pass through to deposit pricing — even for a CASA-heavy franchise. More critically, BCA is the single largest constituent of the MSCI Indonesia Index (~25–30% weight), and MSCI's freeze on Indonesia's inclusion factor review since January 2026 creates a binary downgrade risk that could trigger forced institutional selling independent of any fundamental data. The IDR at record lows (Rp 17,645/USD) and Fitch's sovereign Negative outlook reflect a fiscal and monetary regime deterioration under the Prabowo government — not a cyclical trough — with populist directed-lending schemes (subsidised ultra-micro loans, 40-year mortgages) adding regulatory headwinds. Meanwhile, 1Q26 credit cost was already running at 60bps (loan-level), above the 40–50bps FY26 guidance midpoint, LAR rose to 5.1%, and consumer NPLs are up 25% YoY across the sector. With all sell-side price targets pre-dating the BI hike and the MSCI outcome unresolved, near-term price catalysts are predominantly binary and negatively skewed.
 
-| Scenario | ROE | g | CoE | Justified P/BV | **12m Target** | **Upside** |
+---
+
+## Key Metrics Table
+
+| Metric | FY24A | FY25A | 1Q26A | FY26E | FY27E | FY28E |
 |---|---|---|---|---|---|---|
-| Bear | 19% | 4.75% | 14.0% | 1.54x | **IDR 3,300** | **-35%** |
-| Base | 22% | 5.5% | 12.5% | 2.36x | **IDR 5,100** | **~flat** |
-| Re-rating | 22% | 5.5% | 11.4% | 2.80x | **IDR 6,000** | **+18%** |
-| Bull | 24% | 6.0% | 11.0% | 3.60x | **IDR 7,700** | **+52%** |
+| Net profit (Rp bn) | ~54,845 | 57,537 | 14,684 | 59,905 | 67,108 | 74,877 |
+| EPS (Rp) | ~445 | 467 | 119 (ann. ~476) | 486 | 544 | 607 |
+| EPS growth (%) | — | +4.9% | +4% YoY | +4.1% | +12.0% | +11.6% |
+| NIM (%) | ~6.0% | 5.8% | 5.4% | 5.4% | 5.5% | 5.9% |
+| Gross NPL (%) | 1.70% | 1.63% | 1.80% | 1.80% | 1.90% | 1.90% |
+| NPL coverage (%) | ~216% | 193% | ~182% | ~180% | ~168% | ~158% |
+| CASA ratio (%) | — | 83.7% | ~85% | 85.1% | 86.2% | 87.0% |
+| Credit cost (bps) | — | 44 | ~50 | ~50 | ~40 | ~40 |
+| CIR (%) | — | 33.5% | 30.5% | 31.6% | 30.6% | 29.5% |
+| Tier 1 CAR (%) | 28.2% | 28.6% | 25.8% | 27.7% | 27.3% | 26.6% |
+| ROE (%) | ~21% | 21.1% | 21.7% | 20.7% | 21.8% | 22.6% |
+| BVPS (Rp) | ~2,129 | 2,283 | ~2,102 | 2,409 | 2,594 | 2,793 |
+| P/BV (x, at Rp 5,075) | — | 2.2x | — | 2.1x | 2.0x | 1.8x |
+| P/E (x, at Rp 5,075) | — | 10.9x | — | 10.4x | 9.3x | 8.4x |
+| Dividend yield (%) | — | ~3.9% | — | 5.5% | 6.3% | 7.1% |
 
-**Broker targets for reference:** GS Rp8,100 Buy (3-stage DDM) | UBS Rp9,800 Buy (GGM, CoE 11.4%) | Macquarie Outperform (GGM, surplus-equity adjusted). All written at Rp6,425 (Apr 2026); stock has since fallen further to Rp5,075.
-
-**Key insight:** The base case (~flat) is the honest GGM answer at current risk premiums — the stock is fairly valued, not deeply cheap. The upside is a **CoE compression story**: if MSCI EM reaffirmed + BI pivots, CoE drops 12.5% → 11%, and P/BV jumps 2.36x → 3.60x (+53%) with no change in ROE. That is the option the market is not pricing.
-
----
-
-## Key Catalysts to Watch
-
-**Bull:** (1) MSCI reaffirms Indonesia EM status in June 2026 review; (2) rupiah stabilises and BI signals rate hold/cut; (3) 2Q26 NIM holds at 5.4%+; (4) loan growth reaches double digits in 2H26.
-
-**Bear:** (1) MSCI downgrades Indonesia to frontier market (USD 1.8–13bn passive outflow); (2) BI hikes again, NIM falls below 5.0%; (3) consumer/SME NPL accelerates above 3%; (4) Fitch downgrades Indonesia sovereign from BBB.
-
----
-
-## Biggest Open Research Gap
-
-The 2Q26 results (due approximately July 2026) will be the first to reflect the full impact of the May 2026 BI 50 bps surprise rate hike on NIM. That print resolves the single most important near-term binary: does BCA's CASA franchise protect NIM, or does the hike push NIM below guidance? No investment thesis is complete without it.
+Sources: GS Apr 2026 model tables (Melissa Kuang, Goldman Sachs Singapore Pte, 24 April 2026); actual 1Q26 from same. FY26–28E are GS Apr 2026 estimates.
 
 ---
 
-*Sources: BCA IR (bca.co.id), Bank Indonesia (bi.go.id), Fitch Ratings, Samuel Sekuritas broker reports, IDNFinancials, Alpha Spread, Simply Wall St, heygotrade.com, Jakarta Globe. Research cycle: Alpha orchestration, Charlie (bull) + Kilo (bear) parallel research, 2026-06-07.*
+## GGM Target Price Scenarios (FY26E BVPS: Rp 2,409)
+
+| Scenario | ROE | CoE | g = ROE×27% | Justified P/BV | Implied Price | vs. Current |
+|---|---|---|---|---|---|---|
+| Bear (post-hike stress) | 19% | 14.0% | 5.1% | 1.55x | ~Rp 3,730 | −27% |
+| Base (Macquarie-like) | 22% | 12.8% | 5.9% | 2.31x | ~Rp 5,565 | +10% |
+| Re-rating (UBS-like) | 22% | 11.4% | 5.9% | 2.91x | ~Rp 7,010 | +38% |
+| Bull (GS DDM-implied) | 24% | 11.0% | 6.5% | 3.83x | ~Rp 9,230 | +82% |
+
+CoE note: Macquarie explicit CoE = 12.8% (beta 1.0, ERP 6.0%, RFR 7.0%). UBS CoE ~11.4% backed out from GGM inputs. Post-20 May 2026 BI hike adds ~50bps to all CoE estimates; base case CoE should be considered at least 13.0% until IDR stabilises.
+
+---
+
+## Broker Summary
+
+| House | Rating | PT (Rp) | Date | Note |
+|---|---|---|---|---|
+| Goldman Sachs (Kuang) | Buy | 8,100 | 24 Apr 2026 | 3-stage DDM; pre-hike |
+| UBS | Buy | 9,800 | Apr 2026 | GGM; pre-hike |
+| Macquarie (Vantarakis) | Outperform | 7,000 | 18 May 2026 | GGM adj. P/BV; most current |
+
+**All price targets are pre-20 May 2026 BI hike.** Macquarie's Rp 7,000 is the most defensible current estimate given it uses the highest CoE (12.8%) and was published closest to current date.
+
+---
+
+## Catalyst Watch-List
+
+| Catalyst | Direction | Timing | Source |
+|---|---|---|---|
+| MSCI semi-annual EM/Frontier review decision | Binary (bear if downgrade) | Mid-2026 | Macquarie May 2026 |
+| 2Q26 earnings (NIM, credit cost, LAR) | Bear if NIM < 5.4% or credit cost > 50bps | Late July 2026 | GS Apr 2026 |
+| BI MPC meeting — hold or cut signal | Bull if hold/cut; bear if further hike | Monthly | Macquarie May 2026 |
+| IDR/USD stabilisation below Rp 16,500 | Bull | Ongoing | Macquarie May 2026 |
+| Fitch sovereign rating action | Bear if downgrade from BBB | Ongoing | Brief background data |
+| FY26 interim dividend announcement | Bull (signals capital distribution) | 2H26 | GS Apr 2026 dividend yield |
+| Corporate loan disbursement data (OJK monthly) | Bull if 8%+ YoY acceleration | Monthly | Macquarie May 2026 |
+| SRBI auction rates — stabilise or decline | Bull if SRBI rates peak | Weekly | Macquarie May 2026 |
+
+---
+
+*Brief prepared by Alpha, based on primary broker reports (Goldman Sachs April 2026, GS January 2026, GS January 2026 corporate day note, Macquarie May 2026) and the GGM valuation framework mandated for Indonesian banking. Not investment advice.*
