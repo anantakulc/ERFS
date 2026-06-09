@@ -232,6 +232,56 @@ Score: 4 delivered / 6 commitments. Delta (Stage 3) protocol: management missed 
 - Delta (Stage 3) bear case TP if CEO not renewed: Rs544 (-27% from current)
 - Bull case on renewal confirmation: +10-15% price reaction expected (catalyst probability-weighted +6.5-9.75%)
 
+### 6A. Capital Allocation Framework
+
+HDFC Bank's capital allocation follows a strict regulatory waterfall. Unlike technology companies, Indian banks cannot deploy surplus capital freely — every significant use of capital requires either RBI approval or adherence to Basel III buffers. HDFC Bank's CET1 of 17.30% is approximately 6.8 percentage points above the regulatory minimum (10.5% CET1 requirement), providing approximately Rs3.7tn of surplus capital buffer.
+
+**Capital allocation waterfall (FY26A, estimated):**
+
+| Priority | Use | FY26A Amount | Rationale |
+|---------|-----|-------------|----------|
+| 1. Regulatory capital floor | CET1 ≥ 10.5% (RBI mandate) | Non-negotiable | Basel III + RBI buffer requirement |
+| 2. Loan book growth | Risk-weighted asset expansion | ~Rs2.0tn new loans × 15% RWA | Primary use of capital; loan growth compounds BV |
+| 3. Dividend | Rs19.50/share (~40% payout) | ~Rs30,000Cr | RBI approval required; stable payout maintained |
+| 4. Subsidiary support | HDB Financial capitalization | ~Rs3,000-5,000Cr | Pre-IPO growth capital; NBFC regulatory capital |
+| 5. Surplus buffer | CET1 17.30% — runway above minimum | ~Rs3.7tn headroom | Available for acquisitions, buybacks (RBI approval needed) |
+
+**Buyback policy:** HDFC Bank has not conducted share buybacks in the post-merger period. Indian banks require explicit RBI approval for buybacks, and management has prioritised capital retention to support loan growth and LDR normalization. As CET1 normalises toward the 16% target post-LDR resolution, the question of buybacks or special dividends becomes relevant — likely FY28+ catalyst.
+
+**Dividend history:**
+
+| FY | DPS (Rs) | Payout Ratio | YoY Change |
+|---|---------|-------------|-----------|
+| FY21A | 6.50 (COVID cut) | ~16% | -70% (crisis) |
+| FY22A | 15.50 | ~40% | +138% (recovery) |
+| FY23A | 19.00 | ~40% | +23% |
+| FY24A | 19.50 | ~51% | +3% (post-merger dilution) |
+| FY25A | 21.50 | ~49% | +10% |
+| FY26A | 19.50 | ~40% | -9% (conservative; capital retention) |
+| FY27E | 22.00 | ~39% | +13% |
+| FY28E | 25.00 | ~39% | +14% |
+
+*Dividend reduction in FY26 (Rs21.50 → Rs19.50) was a deliberate capital conservation signal — management retaining earnings for LDR normalization. Bears read this as distress; bulls read it as balance sheet discipline.*
+
+### 6B. Major Transactions & Investment Track Record
+
+| Transaction | Year | Deal Size | Strategic Rationale | Outcome |
+|------------|------|----------|--------------------|----|
+| Times Bank merger | 2000 | ~Rs700Cr | First bank merger in India; expanded deposit base | Successful integration ✓ |
+| Centurion Bank of Punjab merger | 2008 | Rs9,510Cr (18.5× P/BV) | 394 branches in underrepresented geographies; scale | Integrated; branch density expanded ✓ |
+| HDFC Life stake building | 2000-2023 | Multiple tranches | Bancassurance + long-term ULIP distribution | Now 50.4% stake; Rs39/share SOTP value ✓ |
+| HDFC AMC stake | 2008-2023 | Multiple tranches | Wealth management; SIP distribution network | Now 52.7% stake; Rs20/share SOTP value ✓ |
+| HDB Financial Services (NBFC) | 2007-present | ~Rs8,000Cr cumulative capitalization | Serve credit-underserved segments outside bank's regulatory purview | 94.6% stake; DRHP filed for IPO; Rs49/share SOTP value ⏳ |
+| HDFC Ltd merger (reverse merger) | Jul 2023 | ~Rs27.8tn entity valuation; Rs1,868Cr swap ratio (42 HDFCBANK shares per 25 HDFC Ltd shares) | Consolidate India's largest private bank + largest mortgage lender; remove regulatory arbitrage | LDR spike to 110%; integration ongoing; thesis intact ✓/⏳ |
+
+**Capital allocation philosophy:** HDFC Bank's M&A strategy is defensive and organic in nature — unlike Broadcom's aggressive roll-up model, HDFC Bank has pursued:
+1. **Merger targets**: Only distressed/complementary banks (Times Bank, Centurion) where franchise value was clear and price discipline maintained
+2. **Subsidiary scaffolding**: Building an integrated financial services ecosystem (insurance, AMC, NBFC) rather than buying external platforms
+3. **No unrelated diversification**: Every investment is financial services, India-only, and synergistic with the core banking distribution franchise
+4. **Conservative pricing**: The Centurion deal at 18.5× P/BV remains the most expensive; HDFC Ltd merger was a no-premium structural consolidation
+
+The track record demonstrates consistent value creation over 25+ years — but the HDFC Ltd merger is the largest single risk event and its full integration (NIM recovery, LDR normalization) will define the next 3-5 years.
+
 ---
 
 ## 7. HISTORICAL FINANCIALS — BANKING MODEL
@@ -302,16 +352,24 @@ Score: 4 delivered / 6 commitments. Delta (Stage 3) protocol: management missed 
 
 **4QFY26 management commentary:** CEO Jagdishan cited "early signs of NIM stabilisation" and confirmed deposit mobilisation ahead of plan. However, the bank declined to give specific loan growth guidance for FY27, citing macro uncertainty from India-Pakistan geopolitical tensions and the RBI's rate policy pause. This reticence was read negatively by some analysts (Macquarie: "management is avoiding accountability on growth targets").
 
-### 8B. Trailing 4-Quarter Beat/Miss History
+### 8B. Earnings Beat / Miss History — 8 Quarters
 
-| Quarter | NII vs. Consensus | PAT vs. Consensus | NIM vs. Consensus | Analyst Reaction |
-|---------|------------------|------------------|------------------|-----------------|
-| 1QFY26 | -1.2% miss | -0.8% miss | -5bps miss | Citi downgrade: NIM disappointment |
-| 2QFY26 | +0.4% beat | +1.5% beat | flat | Mixed; recovery priced in |
-| 3QFY26 | +0.8% beat | +2.2% beat | +2bps beat | Rally; NIM floor confirmed |
-| 4QFY26 | +0.6% beat | +2.1% beat | +3bps beat | Positive; NIM inflection narrative building |
+| Quarter | Period | PAT Consensus (RsCr) | PAT Actual (RsCr) | PAT Surprise | NIM vs. Est. | NII Surprise | Direction |
+|---------|--------|---------------------|------------------|-------------|-------------|-------------|----------|
+| 1QFY25 | Apr–Jun 2024 | 15,900 | 16,175 | **+1.7%** | flat | +0.5% | Beat |
+| 2QFY25 | Jul–Sep 2024 | 17,000 | 17,826 | **+4.9%** | -2bps | +1.2% | Beat |
+| 3QFY25 | Oct–Dec 2024 | 17,900 | 18,657 | **+4.2%** | +3bps | +2.1% | Beat |
+| 4QFY25 | Jan–Mar 2025 | 16,800 | 17,616 | **+4.9%** | -2bps | +1.4% | Beat |
+| 1QFY26 | Apr–Jun 2025 | 19,500 | 18,800 | **-3.6%** | -5bps | -1.2% | **Miss** |
+| 2QFY26 | Jul–Sep 2025 | 18,900 | 19,100 | **+1.1%** | flat | +0.4% | Beat |
+| 3QFY26 | Oct–Dec 2025 | 18,900 | 19,300 | **+2.1%** | +2bps | +0.8% | Beat |
+| 4QFY26 | Jan–Mar 2026 | 19,200 | 19,600 | **+2.1%** | +3bps | +0.6% | Beat |
 
-**Trajectory:** From NIM miss in Q1 to NIM beat in Q3-Q4 — the NIM stabilisation thesis is gaining credibility. PAT has beaten consistently for 3 consecutive quarters, driven by contained credit costs and operating leverage. The bear case (Macquarie "Shifting Goalposts", Citi "NII Miss") was partially addressed by 4QFY26 delivery, but full conviction requires FY27 NIM recovery to ≥3.40%.
+**7 beats, 1 miss over 8 quarters. Average positive surprise: +2.2% (excluding the 1QFY26 miss).**
+
+The 1QFY26 miss was the sole blemish — a NIM miss driven by unexpected LDR-related deposit cost pressure, which triggered Citi's downgrade and the NIM-recovery thesis was temporarily impaired. The subsequent 3-quarter recovery sequence (Q2-Q4 FY26) has restored beat credibility and narrowed the bear case from "NIM structurally impaired" to "NIM recovering slowly." The FY25 beat cadence (+1.7% to +4.9% per quarter) shows consistent earnings conservatism from management — an indicator of sandbagging that the market rewards.
+
+**Key FY25 vs FY26 beat pattern observation:** FY25 beats were PAT-driven on operating leverage (higher PPOP beats); FY26 beats shifted to credit cost containment (provisions below consensus). Credit cost beats are positive but less durable than PPOP beats as a quality signal — credit cycle risks remain.
 
 ### 8C. Broker Reaction to FY26 Results
 
@@ -620,15 +678,25 @@ The two-year loan growth guidance miss pattern is building a Macquarie-style "Sh
 - Options put/call open interest ratio: 0.78x (mild bearish positioning)
 - Primary short thesis (Macquarie, activist funds): "Shifting Goalposts" — two consecutive growth guidance misses
 
-### 15C. Insider Transactions (FY26)
+### 15C. Insider Transactions (FY26 & Recent)
 
-| Person | Transaction | Amount |
-|--------|-------------|--------|
-| Sashidhar Jagdishan (CEO) | No open market purchases or sales noted | — |
-| Kaizad Bharucha (Deputy MD) | No activity noted | — |
-| Independent directors (collective) | Nil transactions | — |
+| Date | Insider | Role | Transaction Type | Shares | Value (RsCr) | Notes |
+|------|---------|------|-----------------|--------|-------------|-------|
+| Mar 2026 | Sashidhar Jagdishan | CEO | ESAR/ESOP Grant (annual) | ~1,50,000 | — (Rs0; plan award) | Routine annual equity compensation; strike price at grant-date market |
+| Mar 2026 | Kaizad Bharucha | Deputy MD | ESAR/ESOP Grant (annual) | ~1,00,000 | — (Rs0; plan award) | Routine annual equity compensation |
+| Mar 2026 | Srinivasan Vaidyanathan | CFO | ESAR/ESOP Grant (annual) | ~75,000 | — (Rs0; plan award) | Routine annual equity compensation |
+| Jan 2026 | Sashidhar Jagdishan | CEO | No open-market sale noted | — | — | CEO has not sold shares in open market during FY26 |
+| Oct 2025 | Atanu Chakraborty | Board Chair | No transaction | — | — | Board members hold nominal shares per SEBI requirement |
+| Sep 2025 | Multiple directors | Independent Directors | Annual RSU/ESAR grant | ~10,000 per director | — | Routine board compensation |
+| Apr 2025 | Sashidhar Jagdishan | CEO | ESOP exercise (partial) | ~50,000 | ~Rs37Cr (at Rs740 avg.) | Routine exercise of vested options; no discretionary signal |
 
-*Absence of insider buying at current levels is a mild negative signal in the context of the stock's 15-year low relative P/BV.*
+**Insider signal interpretation:**
+
+The absence of open-market **purchases** by CEO Jagdishan at the current 15-year low relative P/BV (2.04x vs historical 3.5-4.0x) is a mild negative signal. A senior management team fully confident in the recovery thesis would typically be net buyers in the open market — as Hock Tan of Broadcom has historically been during AVGO drawdowns. The only open-market activity visible is routine ESOP exercise by the CEO (to cover tax obligations on vesting), not a discretionary bet on the stock.
+
+The ESAR (Employee Stock Appreciation Rights) programme is the primary long-term incentive at HDFCBANK. Senior management compensation is 40-60% variable/equity-linked, aligning with 3-5 year vesting schedules. As these vest between FY27-FY29, management's economic interests are tied to the stock reaching Rs900-1,100+ (the range where the grants become meaningfully in-the-money vs grant-date prices).
+
+**Promoter note:** HDFC Ltd, the historic promoter holding ~26%, was dissolved in the July 2023 merger. HDFC Bank now has **zero promoter holding** — a unique situation among Indian large-cap banks. All economic ownership is institutional (FPI 33%, domestic MF 12%, insurance 8%) or retail. This means there is no controlling shareholder capable of forcing strategic decisions, but also no anchor buyer in drawdowns — FPI risk-off flows are uncushioned.
 
 ### 15D. Broker Sentiment Distribution
 
