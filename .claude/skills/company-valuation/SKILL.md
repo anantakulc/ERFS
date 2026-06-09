@@ -103,8 +103,8 @@ If `RF_10Y=` printed, use that value as `rf` in Step 4 instead of the hardcoded 
 | Projection horizon | 5 years | Standard explicit forecast window |
 | Terminal growth `g` | 2.5% | ~long-run US GDP |
 | Risk-free rate `rf` | Live 10Y UST from Step 1, else 4.5% | Current cost of capital anchor |
-| Equity risk premium `erp` | 5.5% | Damodaran mid-range |
-| Beta | `info['beta']` from yfinance | Market-observed levered beta |
+| Equity risk premium `erp` | **4.6%** (Damodaran implied, US) | Forward-looking implied ERP, NOT historical 5.5% average |
+| Beta | Blume-adjusted: `0.33 + 0.67 × info['beta']` | Mean-reversion adjustment; raw yfinance beta is 5-yr monthly which overstates for high-beta names |
 | Cost of debt `kd` | `interest_expense / total_debt`, else 5.5% | Effective rate; fallback to IG spread |
 | Tax rate | 3-yr median effective rate, floored 15%, capped 30% | Strips out one-offs |
 | Margin assumptions | 3-yr median of each ratio | Smooths cyclical noise |
@@ -201,10 +201,11 @@ payout_ratio = min(dps / eps_trailing, 0.95) if eps_trailing > 0 else 0.40
 g_sustainable = min(roe * (1 - payout_ratio), 0.06)  # cap at 6%
 
 # Cost of equity (ke) — use CAPM, no WACC for banks
-rf   = 0.045   # override with live RF from Step 1
-erp  = 0.055
-beta_bank = info.get("beta") or 1.0
-ke   = rf + beta_bank * erp
+rf        = 0.045   # override with live RF from Step 1
+erp       = 0.046   # Damodaran implied ERP (US, 2026)
+beta_raw  = info.get("beta") or 1.0
+beta_bank = 0.33 + 0.67 * beta_raw   # Blume adjusted
+ke        = rf + beta_bank * erp
 ```
 
 **Bank data from S&P Capital IQ (if MCP available — preferred over yfinance for banks):**
@@ -240,11 +241,19 @@ for g in growth_path:
     fcff.append(nopat + rev_t[-1]*da_pct - rev_t[-1]*capex_pct - rev_t[-1]*nwc_pct)
 
 # 4d. WACC — four-step: formula → sector sanity → peer-implied WACC → adjudicate
-rf, erp, kd = 0.045, 0.055, 0.055  # override rf with live value from Step 1
-ke = rf + beta * erp
+rf  = 0.045   # override with live 10Y UST from Step 1
+erp = 0.046   # Damodaran implied ERP (US, 2026) — NOT historical 5.5%
+kd  = 0.055   # override with effective rate = interest_expense / total_debt
+
+# Blume mean-reversion beta adjustment (standard industry practice)
+# Raw yfinance beta is 5-yr monthly — high-beta names revert toward 1 over time
+beta_raw    = beta  # from yfinance info["beta"]
+beta_adj    = 0.33 + 0.67 * beta_raw   # Blume (1975) adjusted beta
+ke = rf + beta_adj * erp
 e_v = market_cap / (market_cap + total_debt)
 d_v = 1 - e_v
 wacc_formula = e_v*ke + d_v*kd*(1 - tax_rate)
+# Always disclose: beta_raw, beta_adj, erp used, and resulting ke
 
 # Step 4d-ii. Sector sanity band (from references/wacc_erp_rates.md)
 # wacc_lo, wacc_hi = sector_band_low, sector_band_high
