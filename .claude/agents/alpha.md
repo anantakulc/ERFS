@@ -86,24 +86,22 @@ Include the subject company as first row. Note what multiple spread implies (dis
 Three sub-sections:
 
 **WACC Adjudication (mandatory — run before any DCF)**
-Four-step process:
+Four-step process — follow company-valuation skill Step 4d exactly:
 1. Compute formula WACC (rf + β × ERP, capital-structure weighted)
 2. Look up sector sanity band from `references/wacc_erp_rates.md`
-3. Compute peer-implied WACC: median CAPM ke across the 7 peers in §10 (each peer: rf + peerβ × ERP, then weight by sector E/V ratio)
-4. Compute market-implied ke ≈ (1 / fwd_PE) + long-run g (use terminal g, NOT short-term consensus growth)
+3. Compute peer-implied WACC: compute **full WACC** for each of the 7 peers in §10 using their own beta, capital structure (E/V, D/V), and effective kd. Take the **median**. This is not just ke — it is the full WACC per peer.
+4. Compute market-implied ke ≈ (1 / fwd_PE) + terminal g (use terminal g, NOT short-term consensus growth)
 
-Adjudication rule — choose ONE WACC for the base DCF:
-- Formula WACC **inside** sector band → use formula WACC
-- Formula WACC **above** sector band by ≤150bps → use formula WACC, flag in output
-- Formula WACC **above** sector band by >150bps → diagnose:
-  - If peer-implied WACC is meaningfully lower (>100bps gap): use peer-implied WACC for base case; formula WACC becomes the bear-case discount rate
-  - If near-100% equity structure drives the gap: acceptable — use formula WACC and flag
-  - If beta is distorted (>1.5× without fundamental justification): use sector-median beta, recompute
-- Formula WACC **below** sector band → use sector floor (conservative floor)
+Adjudication rule — single decision gate:
+- GAP = formula_wacc − peer_median_wacc
+- **GAP ≤ 150bps** → use formula WACC (formula is close to what peers imply)
+- **GAP > 150bps** → switch to peer median WACC as the base case; formula WACC becomes the bear-case rate only
 
-Required output box: `formula_wacc | sector_band | peer_implied_wacc | market_implied_ke | **adopted_wacc** | reason (2 sentences max)`
+This is the correct implementation of "if the WACC from calculation is too off from peers, use the peers' WACC."
 
-The adopted WACC feeds ALL three DCF scenarios and the blended intrinsic. Never silently use the formula WACC when it falls outside the sector band by >150bps.
+Required output box (7 columns): `formula_wacc | sector_band | peer_median_wacc | market_implied_ke | GAP(bps) | adopted_wacc | reason`
+
+The adopted WACC feeds the base DCF and the Blended Intrinsic. Bear scenario uses max(formula_wacc, adopted_wacc + 100bps). Bull uses adopted_wacc − 100bps.
 
 **Method 1: DCF — Three Scenarios**
 - Use the adjudicated WACC (from above) as the base WACC
