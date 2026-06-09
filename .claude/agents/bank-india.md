@@ -215,7 +215,7 @@ Note fee income / total revenue ratio and trend. Source: Charlie §4.
 
 ### Section 6 — Management & Governance
 
-Two parts:
+Four parts:
 
 **Leadership Table**
 
@@ -224,6 +224,32 @@ Two parts:
 | | | | |
 
 **Governance Scorecard** — reproduce Golf's governance scorecard (§6.1) verbatim. Include: board independence score, related-party transactions flag, succession clarity, regulatory relationship, any active Golf AUDIT: FLAG items and their resolution status.
+
+**Capital Allocation Framework** — mandatory subsection. Cover:
+
+1. Regulatory capital waterfall: show how surplus capital is allocated in priority order (regulatory floor → loan growth → dividends → buybacks/special distributions → subsidiary investment). Include approximate amounts for most recent FY.
+2. Dividend history table — minimum 6 years of DPS history with payout ratios:
+
+| FY | DPS ([CURRENCY]) | Payout Ratio (%) | YoY Change | Notes |
+|---|---|---|---|---|
+| FY-5A | | | | |
+| FY-4A | | | | |
+| FY-3A | | | | |
+| FY-2A | | | | |
+| FY-1A | | | | |
+| FY0A | | | | |
+| FY+1E | | | | |
+
+3. Buyback policy: has the bank conducted buybacks? If yes, table of buyback programmes (date, size, price). If no, explain the regulatory/strategic constraint (e.g., RBI approval required).
+4. Surplus capital deployment: what does the bank plan to do with capital above the regulatory floor (CET1 − minimum CET1 requirement)?
+
+**Major Transactions & M&A Track Record** — mandatory subsection. Build a transaction history table of all material acquisitions, mergers, and major investments. For banks this includes: bank mergers absorbed, NBFC acquisitions, insurance/AMC subsidiary stakes, international expansion:
+
+| Transaction | Year | Deal Size / Terms | Strategic Rationale | Outcome |
+|---|---|---|---|---|
+| [Name] | | | | ✓ Integrated / ✓ Value created / ✗ Value destroyed / ⏳ Pending |
+
+After the table: 2–3 sentences on the overall capital allocation philosophy — is management disciplined (ROIC-focused, P/BV-sensitive on M&A) or empire-building? How does their M&A philosophy compare to sector peers? Source: Bravo §1 / Golf §6 / company annual reports.
 
 ---
 
@@ -287,13 +313,24 @@ Full banking financial model table — actuals and estimates. Pull from Bravo §
 | ROA (%) | | | | | | |
 | C/I Ratio (%) | | | | | | |
 
-**Beat / Miss History (last 6 quarters)**
+**Beat / Miss History (last 8 quarters)**
 
-| Quarter | NII Est. | NII Actual | Surprise | PAT Est. | PAT Actual | Surprise |
-|---|---|---|---|---|---|---|
-| | | | | | | |
+Show 8 quarters (2 full fiscal years) of earnings history in the AVGO-style format. For each quarter show PAT estimate vs actual vs surprise %, plus NIM vs consensus and NII surprise. Extend back further only if data is available in prior stage files.
 
-*Source: Charlie §5 / earnings transcripts.*
+| Quarter | Period | PAT Consensus | PAT Actual | PAT Surprise | NIM vs Est. | NII Surprise | Direction |
+|---|---|---|---|---|---|---|---|
+| [Q-7] | | | | | | | Beat / Miss |
+| [Q-6] | | | | | | | |
+| [Q-5] | | | | | | | |
+| [Q-4] | | | | | | | |
+| [Q-3] | | | | | | | |
+| [Q-2] | | | | | | | |
+| [Q-1] | | | | | | | |
+| [Q0 — Most Recent] | | | | | | | |
+
+*Source: Charlie §5 / earnings transcripts / broker research files from Stage 0.*
+
+After the table: state the beat/miss score (e.g., "7 beats, 1 miss over 8 quarters; average positive surprise +X%"). Note whether beats are PPOP-driven (higher quality — reflects operating leverage) or credit-cost-driven (lower quality — reflects provisioning conservatism). Distinguish between NIM beats and PAT beats.
 
 **Post-Results Analyst Reaction (most recent quarter)** — list key broker actions, target price changes, and any rating changes following the most recent quarterly result. Source from broker research files in Stage 0.
 
@@ -502,15 +539,20 @@ Same format as bull case — full paragraphs, 3–5 sentences each, quantified. 
 
 [2–3 sentences on ownership structure: passive vs active, foreign vs domestic, index weight implications if applicable.]
 
-**Insider Transactions (Most Recent)**
+**Insider Transactions (Most Recent — last 12 months)**
 
-| Date | Insider | Role | Type | Shares | Value |
-|---|---|---|---|---|---|
-| | | | | | |
+| Date | Insider | Role | Transaction Type | Shares | Value ([CURRENCY]) | Notes |
+|---|---|---|---|---|---|---|
+| | | | Open-market Buy / Open-market Sale / ESOP Grant / ESAR Grant / RSU Vesting | | | Routine / Discretionary / Plan-sale |
 
-*Source: [source]*
+*Source: [exchange filing / company disclosure / SEBI SAT filings / SEC Form 4 depending on jurisdiction]*
 
-[2–3 sentence interpretation. Any cluster of sales? Routine RSU grants? Open market purchases?]
+Required interpretation (3–4 sentences):
+- Are any insiders buying in the open market? If yes, at what price level and by whom? Open-market purchases by the CEO/CFO near a multi-year P/BV low are a strong positive signal.
+- Are there clustered sales? Distinguish routine plan-based sales (ESOP exercise for tax) from discretionary sales (potential thesis-break signal).
+- Compare insider ownership % to historical levels and to sector peers.
+- Note if there is a promoter/controlling shareholder (and their recent transactions) or if the bank is widely held with nil promoter (as in the HDFCBANK post-merger case).
+- Note the ESOP/ESAR vesting schedule: at what price are senior management's equity awards in-the-money vs underwater? This reveals management's implicit view of the stock's intrinsic value.
 
 **Broker Sentiment Summary**
 
