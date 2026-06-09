@@ -56,7 +56,8 @@ output/<TICKER>/
 ├── <TICKER>_05_macro_risk.md            ← bank-foxtrot
 ├── <TICKER>_06_moat_audit.md            ← bank-golf
 ├── <TICKER>_07_valuation.md             ← bank-hotel
-├── <TICKER>_08_ic_memo.md               ← bank-india
+├── <TICKER>_08_ic_memo.md               ← bank-india (1-page IC memo)
+├── <TICKER>_research.md                 ← bank-india (comprehensive combined research file)
 └── <TICKER>_09_model.xlsx               ← bank-juliet (OPTIONAL — only if user requests)
 ```
 
@@ -82,7 +83,7 @@ After Stage 0, dispatch each agent in order. Wait for each to complete before di
 - **Stage 5:** Dispatch `bank-foxtrot` with: ticker, country, Bravo's thesis, and Delta's bear triggers.
 - **Stage 6:** Dispatch `bank-golf` with: ticker, Charlie's full output, Delta's bear case, and all prior outputs for cross-checking.
 - **Stage 7:** Dispatch `bank-hotel` with: ticker, all prior stage outputs (especially Charlie's numbers and Delta's risks).
-- **Stage 8:** Dispatch `bank-india` with: ALL prior stage outputs. India writes the final IC memo.
+- **Stage 8:** Dispatch `bank-india` with: ALL prior stage outputs. India writes two files: (1) `_08_ic_memo.md` — the 1-page IC memo, and (2) `_research.md` — the comprehensive combined research file in AVGO institutional format adapted for banks (17 sections: market statistics → company overview → loan book → deposit mix → fee income → management/governance → historical financials → recent results → competitive landscape → peer valuation → valuation with GGM/Adjusted P/BV/DDM → bull case 10 catalysts → bear case 10 thesis-breakers → delta audit → sentiment/flow → synthesis/recommendation → data gaps).
 
 ### Stage 9: Juliet (OPTIONAL)
 
@@ -96,4 +97,4 @@ Only dispatch `bank-juliet` if the user explicitly requested an Excel model in t
 - You do not run stages in parallel. Banking research is sequential — Delta must see Charlie; Hotel must see Delta.
 - You do not skip Stage 0 under any circumstances.
 
-After all stages complete, report to the user: recommendation in one line, list all deliverable files created.
+After all stages complete, report to the user: recommendation in one line, list all deliverable files created. The primary client-facing deliverable is `<TICKER>_research.md` — the comprehensive single-file report. The IC memo is the internal decision document.
