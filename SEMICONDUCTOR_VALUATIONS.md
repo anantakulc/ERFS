@@ -480,3 +480,47 @@ are the most defensible longs; names expensive on both are the most exposed if t
   DELL and HPE would warrant it); peer sets are pragmatic, not exhaustive; quotes are as-of the
   data feed and not independently verified.
 - **Not financial advice.** Research/educational output only.
+
+
+---
+
+## Bull / Base / Bear scenarios & sensitivity
+
+For each name the DCF is re-run under parameter shifts and the relative leg is flexed
+on the peer multiple. Blended fair value = 50% DCF + 50% Relative, the same weighting as the
+headline screen.
+
+- **Bull:** Year-1 revenue growth +300bps · EBIT margin +200bps · WACC −100bps · terminal g 3.0% · peer multiple +10%
+- **Base:** headline assumptions
+- **Bear:** Year-1 revenue growth −300bps · EBIT margin −200bps · WACC +100bps · terminal g 1.5% · peer multiple −10%
+
+
+| Ticker | Price | Bear | Base | Bull | Bear→Bull upside range |
+|---|--:|--:|--:|--:|:--:|
+| **MU** | $935.89 | $720 | $807 | $897 | -23% → -4% |
+| **AMD** | $475.50 | $139 | $159 | $182 | -71% → -62% |
+| **INTC** | $107.92 | $25 | $28 | $31 | -77% → -71% |
+| **AMAT** | $499.21 | $331 | $379 | $432 | -34% → -13% |
+| **DELL** | $381.78 | $226 | $280 | $347 | -41% → -9% |
+| **MRVL** | $266.88 | $82 | $95 | $109 | -69% → -59% |
+| **STX** | $846.01 | $166 | $194 | $224 | -80% → -74% |
+| **WDC** | $517.72 | $250 | $285 | $321 | -52% → -38% |
+| **ASX** | $35.08 | $23 | $27 | $32 | -35% → -8% |
+| **COHR** | $355.94 | $243 | $277 | $313 | -32% → -12% |
+| **CIEN** | $439.34 | $222 | $253 | $288 | -50% → -34% |
+| **LITE** | $821.76 | $199 | $230 | $263 | -76% → -68% |
+| **HPE** | $48.27 | $45 | $55 | $68 | -7% → +41% |
+| **STM** | $73.32 | $68 | $79 | $91 | -7% → +24% |
+| **TER** | $369.21 | $156 | $178 | $202 | -58% → -45% |
+| **FLEX** | $147.21 | $74 | $100 | $133 | -49% → -10% |
+| **UMC** | $19.88 | $14 | $16 | $18 | -29% → -8% |
+| **ON** | $117.00 | $112 | $128 | $145 | -5% → +24% |
+| **TSEM** | $228.08 | $67 | $76 | $86 | -71% → -62% |
+| **SNX** | $272.80 | $271 | $410 | $598 | -1% → +119% |
+
+*Bear→Bull range brackets the blended fair value under adverse vs favorable assumptions; a range that stays below 0% means downside even in the bull case.*
+
+
+**Downside even in the bull case** (16): MU, AMD, INTC, AMAT, DELL, MRVL, STX, WDC, ASX, COHR, CIEN, LITE, TER, FLEX, UMC, TSEM.
+
+**Upside even in the bear case** (0): none.
