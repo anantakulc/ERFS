@@ -85,16 +85,47 @@ Include the subject company as first row. Note what multiple spread implies (dis
 #### Section 11 — Valuation
 Three sub-sections:
 
+**WACC Adjudication (mandatory — run before any DCF)**
+Four-step process — follow company-valuation skill Step 4d exactly:
+1. Compute formula WACC (rf + β × ERP, capital-structure weighted)
+2. Look up sector sanity band from `references/wacc_erp_rates.md`
+3. Compute peer-implied WACC: compute **full WACC** for each of the 7 peers in §10 using their own beta, capital structure (E/V, D/V), and effective kd. Take the **median**. This is not just ke — it is the full WACC per peer.
+4. Compute market-implied ke ≈ (1 / fwd_PE) + terminal g (use terminal g, NOT short-term consensus growth)
+
+Adjudication rule — single decision gate:
+- GAP = formula_wacc − peer_median_wacc
+- **GAP ≤ 150bps** → use formula WACC (formula is close to what peers imply)
+- **GAP > 150bps** → switch to peer median WACC as the base case; formula WACC becomes the bear-case rate only
+
+This is the correct implementation of "if the WACC from calculation is too off from peers, use the peers' WACC."
+
+Required output box (7 columns): `formula_wacc | sector_band | peer_median_wacc | market_implied_ke | GAP(bps) | adopted_wacc | reason`
+
+The adopted WACC feeds the base DCF and the Blended Intrinsic. Bear scenario uses max(formula_wacc, adopted_wacc + 100bps). Bull uses adopted_wacc − 100bps.
+
 **Method 1: DCF — Three Scenarios**
-- Run company-valuation skill for WACC (formula: rf + β × ERP)
-- Include WACC adjudication note if formula output is outside sector sanity range
+- Use the adjudicated WACC (from above) as the base WACC
 - Bull / Base / Bear scenarios: WACC | terminal g | path | implied price
+  - Bull: adopted_wacc − 100bps (peer-implied or sector midpoint), g +50bps
+  - Base: adopted_wacc, g = 2.5%
+  - Bear: formula_wacc (punitive), g = 1.5%
 - Probability-weighted DCF: P(bear) × bear + P(base) × base + P(bull) × bull
 
-**Method 2: Relative (Peer Multiples)**
-- EV/EBITDA, forward P/E, EV/Revenue applied to company financials
-- Use peer median from Section 10
-- Blended relative price
+**Method 2: Relative (Peer Multiples) — NTM Convention**
+Use NTM (next-twelve-months) estimates as the primary anchor — this is market convention for semi/tech.
+Compute three sub-methods and blend:
+
+| Sub-method | Multiple | Applied to | Implied Price |
+|---|---|---|---|
+| NTM P/E | Peer median Fwd P/E | NTM non-GAAP EPS (from estimate-analysis) | = multiple × NTM EPS |
+| NTM EV/EBITDA | Peer median EV/EBITDA | NTM EBITDA (from estimates or extrapolated) | = (multiple × NTM EBITDA − net debt) / shares |
+| NTM EV/Revenue | Peer median EV/Rev | NTM Revenue (from revenue_estimate) | = (multiple × NTM Rev − net debt) / shares |
+
+Blended Relative Price = equal-weight average of the three sub-methods above.
+
+Also compute FY+2E P/E (peer median × FY+2E non-GAAP EPS) as a 12-month forward check and show it separately — do not include it in the blended relative (it is used only for the adopted target cross-check).
+
+**Critical:** Use non-GAAP EPS for P/E multiples (market convention). State the GAAP EPS alongside it and note the delta. Never apply a trailing P/E multiple to trailing GAAP EPS in the relative section — that produces a misleading low number for companies with high amortisation (e.g., post-acquisition).
 
 **Method 3: SOTP** (if 2+ material segments with different growth/margin profiles)
 - Per-segment EV using pure-play peer multiples
@@ -102,7 +133,25 @@ Three sub-sections:
 - Note conglomerate discount % vs. current market cap
 
 **Probability-Weighted Synthesis**
-Table: Method | Weight | Implied Price | Weighted Contribution → Blended Target
+Table: Method | Weight | Implied Price | Weighted Contribution → **Blended Intrinsic Value**
+
+The Blended Intrinsic Value uses the adjudicated WACC. It is our internal anchor.
+
+**Adopted Price Target**
+Derive our own 12-month price target as follows:
+1. Start from Blended Intrinsic Value
+2. Cross-check with best forward multiple method (peer median P/E × FY+2E non-GAAP EPS, where FY+2E is ~12 months out at time of writing)
+3. If both are within 15% of each other → adopt the average as target
+4. If they diverge >15% → **document the divergence explicitly** (table: method | implied price | reason for gap) and allow an analyst override:
+   - State which method is more appropriate given the company's stage and sector convention
+   - Common overrides: (a) high-growth tech where forward P/E is the market-convention anchor; (b) capital-light compounders where FCF yield matters more than book DCF; (c) cyclicals at mid-cycle where SOTP dominates
+   - The override must cite a specific reason, not just "looks reasonable"
+   - After applying the override, blended target = weighted average of methods with analyst-stated weights
+5. Round to nearest $5
+
+State the adopted target as **our** price target. Mention analyst consensus mean separately as a reference point (e.g., "Street consensus: $X"), never as the basis for our target.
+
+The brief must also use this derived target, not any sell-side figure.
 
 #### Section 12 — Bull Case (10 Catalysts)
 One-sentence thesis. Then 10 numbered catalysts, each: specific, sourced, falsifiable. Cover: revenue drivers, margin drivers, balance sheet/capital return, multiple re-rating, sector tailwind. Not a wish list — each must be grounded in current data.
