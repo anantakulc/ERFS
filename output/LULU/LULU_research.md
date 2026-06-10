@@ -423,4 +423,103 @@ The risk/reward is roughly symmetric: ~28% upside to base vs ~15% downside to be
 | Price basis | Used clean close $117.55 vs stale $121.36 quote | Low (flagged §14) |
 
 ---
-*Research/educational output. Not financial advice. All data via finance-skills plugins (yfinance) as of 2026-06-10.*
+
+## Appendix A — North America Comp-Sales Trajectory (Deep Dive)
+
+*Added 2026-06-10. Reconstructs the Americas comp trend quarter-by-quarter and adjudicates cyclical vs. structural. `[SOURCED]` = company release / named third-party panel; `[ESTIMATED]` = triangulated calculation. LULU's fiscal year is offset: the quarter ending May 3, 2026 is **Q1 FY2026**, reported June 4, 2026.*
+
+### A.1 Quarter-by-quarter comp table (last 8 reported quarters)
+
+| Fiscal Qtr | Qtr end | Total comp | Americas comp | International comp | China Mainland comp | Notes |
+|---|---|---|---|---|---|---|
+| Q1 FY24 | ~Apr 2024 | +6% (+7% cc) | **flat** | — | — | Americas already flat; intl carrying the comp |
+| Q2 FY24 | Jul 28 2024 | — | **−3% (−2% cc)** | — | — | First negative Americas print |
+| Q3 FY24 | Oct 27 2024 | — | **−2%** | — | — | |
+| Q4 FY24 | Feb 2 2025 | — | **flat** | +20% (+22% cc) | +26% (+27% cc) | Total rev +13% to $3.6B; intl/China masking Americas |
+| Q1 FY25 | May 4 2025 | +1% | **−2% (−1% cc)** | +6% (+7% cc) | +7% (+8% cc) | Americas rev +3%; cut FY outlook |
+| Q2 FY25 | Aug 3 2025 | +1% | **−4% (−3% cc)** | +15% (+13% cc)* | +17% (+16% cc)* | CEO "disappointed with U.S. business… product execution" |
+| Q3 FY25 | Nov 2 2025 | +1% (+2% cc) | **−5%** | +9% cc | +25% | Americas rev −2%; GM −290bp to 55.6% |
+| Q1 FY26 | May 3 2026 | +1% (**−2% cc**) | **−6% cc** (US −4%, Canada −6%) | +1% cc | +13% cc | Cut FY guide; "negative media & social commentary impacting traffic" |
+
+\*Q2 FY25 Intl/China comps are single-source extractions (exact cc split not double-verified). *Revenue line corroborated to yfinance quarterly income statement.*
+
+**The trend:** flat → −3% → −2% → flat → −2% → −4% → −5% → **−6% cc** — a steady deterioration with the **worst prints at the end**, not a one-off dip.
+
+### A.2 Exact inflection point
+
+- **Americas comp turned negative in Q2 FY24 (quarter ended Jul 28, 2024): −3% reported.** `[SOURCED]`
+- The warning preceded it: **Americas was already flat in Q1 FY24** while total comps were still +6% — international strength masked a domestic business that had already stopped growing. `[SOURCED]`
+
+### A.3 Management's evolving framing (itself evidence)
+
+1. **Early 2024 (Q1/Q2 FY24):** self-inflicted assortment miss — **color, size availability, newness** in U.S. women's. Internally owned, not macro. `[SOURCED]`
+2. **Mar 2025 (Q4 FY24):** macro — U.S. shoppers **"keeping wallets tight, visiting stores less often"**; tariffs. `[SOURCED — Bloomberg/Fortune]`
+3. **Sep 2025 (Q2 FY25):** product — **"disappointed… aspects of product execution"**; lifestyle/lounge life cycles **"run too long," offerings "stale."** `[SOURCED — SGB/CNBC]`
+4. **Jun 2026 (Q1 FY26):** traffic + brand-noise — **"negative media and social commentary impacting traffic,"** "not all product launches met expectations." `[SOURCED]`
+
+**Fixes announced:** raise % newness; **compress product-development cycle 18–24 mo → 15–16 mo now, targeting 12–14 mo** (a direct admission the design engine is too slow vs. rivals); new franchises (Glow Up, BeCalm, Mile Maker); item-level price increases for tariffs; **+$1.0B buyback** (Q3 FY25) defending EPS. `[SOURCED]`
+
+### A.4 Latest guidance (Q1 FY26, Jun 4 2026) `[SOURCED]`
+
+- **North America revenue now expected to decline high-single-digits** for FY2026 (worse than prior).
+- **China Mainland still guided ~+20%.**
+- **FY2026 revenue cut to $11.0–11.15B** (from $11.35–11.50B); **EPS cut to $10.95–11.15** (from $12.10–12.30) — a >$1.00 cut, the driver of the post-print collapse.
+
+### A.5 Verdict — predominantly STRUCTURAL with a cyclical overlay
+
+**Cyclical evidence:** management's tight-wallet/traffic framing; weakness is U.S.-centric while International and China still comp positive; category-wide leggings-trend cooling (Ugg dethroned "leggings/Lululemon" as No. 1 upper-income-female trend per Piper Sandler).
+
+**Structural evidence (the larger, durable driver):** (1) eight straight quarters of flat-to-deteriorating Americas comps, **worst at the end** — a trend, not a dip; (2) it **predates the macro narrative** (negative by Q2 FY24, before the 2025 tariff/consumer story); (3) management's own admissions — life cycles "run too long," assortment "stale," an 18–24-mo dev cycle they're racing to halve — are competitiveness/agility gaps, not weather; (4) **documented share loss** to Vuori/Alo (Appendix B); (5) **U.S. saturation** (~770+ company stores), so comps now hinge on productivity/traffic — exactly what's eroding.
+
+**Net:** China/International prove the *brand* isn't broken, but in its saturated core NA market LULU is simultaneously cyclically pressured **and** structurally donating relative newness and share. The cyclical part should mean-revert; the structural part is the durable problem and the bigger driver of the worsening late-series prints.
+
+---
+
+## Appendix B — Alo Yoga / Vuori Share-Loss Thesis (Deep Dive)
+
+*Added 2026-06-10. `[PRIVATE-EST]` = third-party estimate of a private company (lower confidence).*
+
+### B.1 The disruptors
+
+| | **Vuori** | **Alo Yoga** |
+|---|---|---|
+| Ownership | Private; **$825M secondary led by General Atlantic + Stripes (Nov 2024) → $5.5B valuation**; prior SoftBank Vision Fund 2 (2021); profitable since 2017 | Private, **founder-controlled** (Color Image Apparel); **2026 reports of a round at up to ~$10B** |
+| Revenue | **~$1B run-rate** `[PRIVATE-EST]` (<$100M in 2023 — steep ramp) | **>$1B total** `[PRIVATE-EST]`; aloyoga.com ~$323M e-comm 2024 |
+| Growth | ~30–40% y/y `[PRIVATE-EST]` | >40% y/y `[PRIVATE-EST]` |
+| Stores | **Passed 100 owned (Aug 2025)**; ~25/yr cadence | **~10 (early 2023) → 100+ (end 2024)** |
+| Positioning | Premium, men-skewed origin ("Lululemon for men"); price at/just under LULU | Premium, women/fashion-led, hot-yoga + celebrity; price at/above LULU |
+
+Reference: LULU TTM revenue **$11.20B** `[SOURCED: yfinance]`. Each rival ≈9–10% of LULU's size but growing 4–8x faster.
+
+### B.2 Third-party share-shift evidence (strongest part of the thesis)
+
+**Earnest Analytics credit-card panel (2025)** `[SOURCED]`: US athleisure spend share — **Nike 31.6% · Lululemon 21.2% · Athleta 4.4% · Fabletics 4.4% · Vuori 2.9% · Alo 1.3%.** **Vuori and Alo each gained ~+1pt over trailing 12 months** (≈+50% relative for Vuori). **Shopper overlap with LULU: Vuori 52%, Alo 63%** — same wallet. Vuori wallet-share among its shoppers rose to **27.4% (from 21.6%)** — deepening loyalty.
+
+**Piper Sandler "Taking Stock With Teens," Fall 2025** `[SOURCED]`: **LULU fell to No. 3 apparel mindshare (from No. 1 Fall 2024), −4pts y/y**; Ugg dethroned "leggings/Lululemon" as No. 1 upper-income-female trend; **Alo gaining among upper-income female teens.**
+
+**Convergence:** revealed credit-card spend + forward teen intent + the company's own −6% cc Americas comp all point the same way — anecdote becomes thesis.
+
+### B.3 How much of NA softness is Alo/Vuori vs. broad category? `[ESTIMATED]`
+
+- Combined Vuori+Alo gain ≈ **+2pts of US athleisure share** over ~12 months, with 52–63% LULU overlap.
+- LULU Americas comp deteriorated ~3–4pts over the comparable window.
+- Sizing: if the duo captured ~$200–400M incremental US premium-athleisure spend overlapping 50–60% with LULU, the **directly cannibalized portion is ~$150–250M** — on a ~$5–6B US business, **~2–4pts of US comp drag**, i.e., **plausibly half (or more) of the Americas deterioration is competitive share loss**, the rest broad category rotation + self-inflicted assortment misses.
+- **Caveat:** Nike (31.6%) is the larger absolute overlap, and dupe culture / leggings-trend rotation pressure LULU regardless. Alo/Vuori are a **major contributor, not the sole cause.**
+
+### B.4 Verdict — durable, with revenue at risk `[ESTIMATED]`
+
+**Durable/structural, likely persistent 1–3 years.** Both rivals have capital (Vuori $5.5B-backed; Alo $10B-round optionality), profitability, and aggressive owned-store rollouts; they sit in LULU's exact price tier and customer; they out-execute on newness/cadence — the very gap LULU admits. Brand-consideration erosion (survey + panel) leads revenue and is slow to reverse. **Not unbounded:** the duo is still only ~3% and ~1% of US athleisure; LULU keeps 21% share, a fortress balance sheet, and a share-gaining China/International engine — this is share *compression* in one geography, not brand collapse.
+
+- **Direct near-term (12–18 mo):** ~**$150–300M** US revenue continuing to bleed (~1.5–3% of total), consistent with high-single-digit NA decline now guided.
+- **Cumulative structural (2–3 yr) if cadence fixes underdeliver:** envelope rises toward **$400–700M (~4–6% of total)** — the difference between a cyclical trough that re-accelerates and a structurally lower NA base. **Swing factor: whether the product-development-cycle compression actually ships on shelf.**
+
+### B.5 Open items for further verification (Delta)
+
+1. Exact China Mainland / RoW comp for Q2 FY25 (single-sourced here).
+2. Vuori and Alo **total** (not e-comm-only) and US-only FY2025 revenue — to tighten cannibalization math.
+3. LULU US-segment revenue base (vs. total Americas incl. Canada) — to convert $ share-loss to precise comp-point drag.
+4. Q1 FY26 traffic vs. conversion vs. AUR decomposition — isolate brand-perception damage from pricing.
+5. Whether dev-cycle compression (→12–14 mo) is shipping in product on shelf — biggest reversibility swing factor.
+
+---
+*Research/educational output. Not financial advice. All data via finance-skills plugins (yfinance) plus company disclosures and named third-party panels (Earnest Analytics, Piper Sandler) as of 2026-06-10. Private-company figures are third-party estimates.*
