@@ -103,8 +103,8 @@ If `RF_10Y=` printed, use that value as `rf` in Step 4 instead of the hardcoded 
 | Projection horizon | 5 years | Standard explicit forecast window |
 | Terminal growth `g` | 2.5% | ~long-run US GDP |
 | Risk-free rate `rf` | Live 10Y UST from Step 1, else 4.5% | Current cost of capital anchor |
-| Equity risk premium `erp` | **4.6%** (Damodaran implied, US) | Forward-looking implied ERP, NOT historical 5.5% average |
-| Beta | Blume-adjusted: `0.33 + 0.67 × info['beta']` | Mean-reversion adjustment; raw yfinance beta is 5-yr monthly which overstates for high-beta names |
+| Equity risk premium `erp` | 5.5% | Damodaran mid-range |
+| Beta | `info['beta']` from yfinance | Market-observed levered beta |
 | Cost of debt `kd` | `interest_expense / total_debt`, else 5.5% | Effective rate; fallback to IG spread |
 | Tax rate | 3-yr median effective rate, floored 15%, capped 30% | Strips out one-offs |
 | Margin assumptions | 3-yr median of each ratio | Smooths cyclical noise |
@@ -201,11 +201,10 @@ payout_ratio = min(dps / eps_trailing, 0.95) if eps_trailing > 0 else 0.40
 g_sustainable = min(roe * (1 - payout_ratio), 0.06)  # cap at 6%
 
 # Cost of equity (ke) — use CAPM, no WACC for banks
-rf        = 0.045   # override with live RF from Step 1
-erp       = 0.046   # Damodaran implied ERP (US, 2026)
-beta_raw  = info.get("beta") or 1.0
-beta_bank = 0.33 + 0.67 * beta_raw   # Blume adjusted
-ke        = rf + beta_bank * erp
+rf   = 0.045   # override with live RF from Step 1
+erp  = 0.055
+beta_bank = info.get("beta") or 1.0
+ke   = rf + beta_bank * erp
 ```
 
 **Bank data from S&P Capital IQ (if MCP available — preferred over yfinance for banks):**
@@ -240,57 +239,31 @@ for g in growth_path:
     nopat = ebit * (1 - tax_rate)
     fcff.append(nopat + rev_t[-1]*da_pct - rev_t[-1]*capex_pct - rev_t[-1]*nwc_pct)
 
-# 4d. WACC — four-step: formula → sector sanity → peer-implied WACC → adjudicate
-rf  = 0.045   # override with live 10Y UST from Step 1
-erp = 0.046   # Damodaran implied ERP (US, 2026) — NOT historical 5.5%
-kd  = 0.055   # override with effective rate = interest_expense / total_debt
-
-# Blume mean-reversion beta adjustment (standard industry practice)
-# Raw yfinance beta is 5-yr monthly — high-beta names revert toward 1 over time
-beta_raw    = beta  # from yfinance info["beta"]
-beta_adj    = 0.33 + 0.67 * beta_raw   # Blume (1975) adjusted beta
-ke = rf + beta_adj * erp
+# 4d. WACC — three-step: formula → sanity → peer-implied → adjudicate
+rf, erp, kd = 0.045, 0.055, 0.055  # override rf with live value from Step 1
+ke = rf + beta * erp
 e_v = market_cap / (market_cap + total_debt)
 d_v = 1 - e_v
 wacc_formula = e_v*ke + d_v*kd*(1 - tax_rate)
-# Always disclose: beta_raw, beta_adj, erp used, and resulting ke
 
 # Step 4d-ii. Sector sanity band (from references/wacc_erp_rates.md)
 # wacc_lo, wacc_hi = sector_band_low, sector_band_high
 
-# Step 4d-iii. Peer-implied WACC — compute FULL WACC for EACH peer (not just ke)
-# For each peer p in the §10 peer set:
-#   beta_p    = yf.Ticker(p).info.get("beta") or sector_default_beta
-#   mc_p      = yf.Ticker(p).info.get("marketCap")
-#   debt_p    = yf.Ticker(p).info.get("totalDebt") or 0
-#   int_exp_p = abs(yf.Ticker(p).cashflow.loc["Interest Expense"].iloc[0]) if available else 0
-#   kd_p      = int_exp_p / debt_p if debt_p > 0 else 0.055
-#   ke_p      = rf + beta_p * erp
-#   ev_p      = mc_p / (mc_p + debt_p)
-#   wacc_p    = ev_p*ke_p + (1-ev_p)*kd_p*(1 - tax_rate)
-# peer_wacc_median = np.nanmedian([wacc_p for all peers with valid data])
-#
-# market_implied_ke = (1 / fwd_pe) + g_terminal   # use terminal g, not short-term consensus
-#
-# Step 4d-iv. Adjudication rule — MANDATORY, produces ONE adopted_wacc:
-#   GAP = wacc_formula - peer_wacc_median
-#   if GAP <= 0.015:                          # within 150bps of peer median
-#       adopted_wacc = wacc_formula           # formula is close to peers; use it
-#   else:                                     # formula WACC is >150bps above peer median
-#       adopted_wacc = peer_wacc_median       # switch to peer-implied WACC as base
-#       note: "Formula WACC {wacc_formula:.2%} exceeds peer median {peer_wacc_median:.2%}
-#              by {GAP*100:.0f}bps (>150bps threshold). Using peer-implied WACC for
-#              base case. Formula WACC retained for bear-case scenario only."
-#
-#   Bear scenario always uses max(wacc_formula, adopted_wacc + 0.01)
-#   Bull scenario always uses adopted_wacc - 0.01
-#
-#   If market_implied_ke diverges from adopted_wacc by >300bps: disclose in output
-#   (common for high-growth names; the gap represents market's growth optionality premium)
+# Step 4d-iii. Peer-implied WACC crosscheck
+# peer_wacc_median = median of per-peer CAPM WACCs
+# market_implied_ke ≈ (1/fwd_pe) + long_run_growth (terminal g, NOT current consensus)
 
-wacc = wacc_formula   # replace with adopted_wacc per Step 4d-iv above
-# REQUIRED output box (6 columns):
-# | formula_wacc | sector_band | peer_median_wacc | market_implied_ke | GAP(bps) | adopted_wacc | reason |
+# Step 4d-iv. Adjudication — produce ONE wacc with written rationale:
+#   INSIDE band  → wacc = wacc_formula
+#   OUTSIDE band → diagnose:
+#     (A) Near-100% equity: check peer WACCs; if similar, formula is right, flag band
+#     (B) Beta distorted: use sector-default beta, recompute ke
+#     (C) Franchise quality: apply 50-150bps haircut to ke, document basis
+#   Choose: formula / sector midpoint / 50-50 blend
+#   Always run sensitivity from formula AND sector-midpoint column
+
+wacc = wacc_formula   # replace with adjudicated value
+# REQUIRED output box: formula_wacc | sector_band | peer_median_wacc | market_implied_ke | final_wacc | reason
 
 # 4e. Terminal value — compute both, use midpoint
 tv_gordon = fcff[-1] * (1 + g_terminal) / (wacc - g_terminal)

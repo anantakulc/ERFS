@@ -23,21 +23,16 @@ rf = yf.Ticker("^TNX").fast_info.last_price / 100
 
 ## Equity Risk Premium (ERP)
 
-Use Damodaran's **implied** ERP (forward-looking, derived from S&P 500 earnings yield + growth − rf) as the primary anchor — NOT the historical average. The historical ERP (~5.5%) systematically overstates the current required return.
+Use Damodaran's monthly ERP update (damodaran.nyu.edu) as anchor. Intra-year, 5.5% is a reasonable mid-range.
 
-**Current implied ERP (as of 2026):** ~4.5–4.6% for the US market.
-Source: Damodaran monthly update at damodaran.nyu.edu/pc/datasets/implprem.xls
-
-| Market | ERP (default — implied) | Historical avg (do NOT use as default) | Source |
-|---|---|---|---|
-| US | **4.6%** | 5.5% | Damodaran implied ERP (S&P 500) |
-| Developed Europe | 5.0-5.5% | 6.0-6.5% | Country risk + base ERP |
-| Japan | 5.0% | 6.0% | Country risk + base ERP |
-| China | 6.5-7.5% | 7.5-8.5% | Base + country risk premium |
-| India | 6.5% | 7.5% | Base + country risk premium |
-| Emerging (broad) | 7.0-9.0% | 8.0-10.0% | Base + country risk |
-
-**Why implied vs historical:** The implied ERP backs out the market's current required return from S&P 500 prices and consensus earnings. It is forward-looking and reflects current risk appetite. The historical average (5.5%) is backward-looking and produces systematically higher WACCs that diverge from market-observed discount rates — leading to DCF outputs inconsistent with how the market actually prices assets.
+| Market | ERP (default) | Source |
+|---|---|---|
+| US | 5.5% | Damodaran implied ERP (S&P 500) |
+| Developed Europe | 6.0-6.5% | Country risk + base ERP |
+| Japan | 6.0% | Country risk + base ERP |
+| China | 7.5-8.5% | Base + country risk premium |
+| India | 7.5% | Base + country risk premium |
+| Emerging (broad) | 8.0-10.0% | Base + country risk |
 
 Adjust with country risk premium (CRP) for emerging markets:
 ```
