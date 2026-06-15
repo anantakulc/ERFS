@@ -23,18 +23,17 @@ Assume the consensus narrative is wrong until proven otherwise. Look for:
 2. **Three thesis-breakers** — three specific, falsifiable conditions that would break the longs. Each: a sentence, what would have to happen, how you'd see it coming.
 3. **Bear case — 5-bullet narrative** — the coherent story where this stock falls 30-50% in the next 12-24 months.
 4. **Structural concerns** — anything in the business model, financing, accounting, or governance that you'd want to dig into. Customer concentration. Working capital trends. Inventory days. Receivables vs. revenue growth. Stock comp vs. FCF.
-5. **What the shorts are saying** — pull from `finance-social-readers`. Name short reports if any (Hindenburg, Muddy Waters, anonymous SA bears).
+5. **What the shorts are saying** — pull from social-readers / WebSearch if available. Name short reports if any (Hindenburg, Muddy Waters, anonymous SA bears).
 6. **Historical precedent** — has a stock with this profile (high multiple + cyclical end-market + customer concentration) blown up before? Name names.
 7. **What would change your mind** — one sentence: under what evidence would the bear case be invalidated?
 
 ## How to source
 
-All data must come from finance-skills plugins. No WebFetch or WebSearch. Weight your queries:
+Same plugin preference order as Charlie. But weight your queries differently:
 - Use `finance-social-readers` to find bear-side X accounts and Discord/Telegram channels.
 - Use `finance-data-providers:adanos-sentiment` looking for *divergence* (e.g. price up, sentiment down).
+- Use WebSearch for "<TICKER> short report", "<TICKER> bear case", "<TICKER> downgrade".
 - Use `finance-market-analysis` for: working-capital ratio trends, FCF-to-net-income gap, stock comp burden.
-
-If a required skill is not available in this session, **halt immediately and report the missing skill name to Alpha**. Do not substitute WebFetch or WebSearch.
 
 ## Hard rules
 
