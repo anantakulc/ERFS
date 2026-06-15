@@ -1,71 +1,89 @@
-# FN · AMAT · NVDA · ASML · TSM — Plain-Language Analysis
+# FN · AMAT · NVDA · ASML · TSM · AVGO · GEV — Plain-Language Analysis
 
-**Date:** 2026-06-14 · **Data:** yfinance live quotes · **Purpose:** educational research, *not* financial advice.
+**Date:** 2026-06-15 · **Data:** yfinance live quotes · **Purpose:** educational research, *not* financial advice.
 
-These five companies are all part of the **same supply chain** that builds the world's
-computer chips — especially the chips that power Artificial Intelligence (AI). Think of it
-like building a skyscraper:
+These 7 companies touch every layer of the AI economy — from chips, to chip factories,
+to the machines that build them, to the power that runs them all.
+Think of it like building and powering a city of AI skyscrapers:
 
-- **ASML** sells the giant cranes and tools (the machines).
-- **AMAT** sells more of the construction equipment (other machines).
-- **TSMC** is the construction company that actually builds the building (the factory).
-- **NVDA** is the architect that designs the most valuable building (the chip).
-- **FN** is the contractor that assembles the finished plumbing/wiring (optical parts) for the building.
+- **ASML** sells the only cranes that can build the tallest floors (monopoly machines).
+- **AMAT** sells the other construction equipment inside the factory.
+- **TSM** is the construction company that physically builds every skyscraper (the chip factory).
+- **NVDA** is the architect that designs the most in-demand skyscraper (the AI chip).
+- **AVGO** designs custom skyscrapers for specific clients (Google, Meta, Apple) and also owns the building management software (VMware).
+- **FN** installs the high-speed fiber wiring that connects all the buildings together.
+- **GEV** builds the power plants and grid infrastructure that keeps the city's lights on.
 
 ---
 
 ## 1. What each company does (in simple words)
 
-### NVDA — NVIDIA  ($205, ~$5.0 trillion company)
+### NVDA — NVIDIA  ($205, ~$5.0 trillion)
 Designs the "brains" (GPUs) that train and run AI like ChatGPT. It does **not** own
-factories — it designs the chips and sells them, plus the software (CUDA) that locks
-customers in. **The single biggest winner of the AI boom so far.** Every big tech company
+factories — it designs chips and sells them, plus the CUDA software that locks every AI
+developer in. **The single biggest winner of the AI boom.** Every big tech company
 (Microsoft, Google, Amazon, Meta) is buying as many NVIDIA chips as it can get.
 
-### TSM — TSMC (Taiwan Semiconductor)  ($424 ADR, ~$2.2 trillion)
-The world's #1 chip **factory**. It doesn't design chips — it manufactures them for everyone
-else: NVIDIA, Apple, AMD all hand their designs to TSMC to physically build. It makes the
-most advanced chips on Earth and roughly **90% of the world's leading-edge chips**. The
-"neutral arms dealer" — it wins no matter which chip designer wins.
+### TSM — TSMC (Taiwan Semiconductor)  ($424, ~$2.2 trillion)
+The world's #1 chip **factory**. Doesn't design chips — manufactures them for everyone
+else: NVIDIA, Apple, AMD all hand designs to TSMC to physically build. Makes roughly
+**90% of the world's leading-edge chips**. The "neutral arms dealer" — wins no matter
+which chip designer wins.
+
+### AVGO — Broadcom  ($382, ~$1.8 trillion)
+Makes **custom AI chips** (called XPUs or ASICs) designed specifically for individual
+customers — Google's AI chip (TPU), Meta's chip (MTIA), and Apple's neural engine
+components are all built with Broadcom's help. Also owns **VMware** (enterprise software),
+giving it stable recurring software revenue alongside the chip business. Think of it as
+NVIDIA's quieter, more diversified rival in AI silicon.
 
 ### ASML — ASML Holding  ($1,864, ~$718 billion)
-A Dutch company with a **true monopoly**: it is the *only* company in the world that makes
-EUV machines — the $200M+ machines required to print the tiniest, most advanced chips.
-TSMC, Samsung and Intel literally cannot make cutting-edge chips without ASML. No competitor
-exists.
+A Dutch company with a **true monopoly**: the *only* maker of EUV machines — the
+$200M+ machines required to print the tiniest advanced chips. TSMC, Samsung, and Intel
+literally cannot make cutting-edge chips without ASML. No competitor exists.
 
 ### AMAT — Applied Materials  ($567, ~$450 billion)
-Makes a broad range of the *other* machines used inside chip factories (deposition, etching,
-ion implantation). Less of a monopoly than ASML, but the biggest and most diversified maker
-of chip-making equipment. Sells to every factory in the world.
+Makes the *other* machines used inside chip factories (deposition, etching, ion
+implantation). Less of a monopoly than ASML but the biggest and most diversified maker
+of chip-manufacturing equipment. Sells to every factory in the world.
+
+### GEV — GE Vernova  ($941, ~$253 billion)
+Makes **gas turbines, wind turbines, and electricity grid equipment** — the power
+infrastructure that runs everything. AI data centers consume enormous amounts of
+electricity. GEV is the company building the power plants and grid that supply it.
+Completely different sector from the others (industrial/energy), but directly tied to
+AI's growth through power demand.
 
 ### FN — Fabrinet  ($611, ~$22 billion) — the small one
 A contract manufacturer in Thailand that **assembles optical and photonic parts** — the
 high-speed fiber-optic transceivers that connect AI servers together inside data centers.
-It builds products other companies design (its biggest customer is NVIDIA). Lower-tech,
-lower-margin assembly work, but riding the AI networking wave.
+It builds products other companies design (biggest customer: NVIDIA). Lower-tech,
+lower-margin assembly work, riding the AI networking wave.
 
 ---
 
 ## 2. The numbers side-by-side
 
-| Metric | **NVDA** | **TSM** | **ASML** | **AMAT** | **FN** |
-|---|--:|--:|--:|--:|--:|
-| Price | $205 | $424 | $1,864 | $567 | $611 |
-| Market cap | $5.0T | $2.2T | $718B | $450B | $22B |
-| **Forward P/E** | **16** | **22** | **39** | **35** | **35** |
-| PEG (P/E vs growth) | **0.63** | 1.32 | 2.75 | 1.89 | — |
-| Revenue growth (yoy) | **+85%** | +35% | +13% | +11% | +39% |
-| Gross margin | **74%** | 62% | 53% | 49% | **12%** |
-| Net margin | **63%** | 47% | 30% | 29% | 10% |
-| Return on equity | **114%** | 36% | 52% | 40% | 20% |
-| Analyst view | Strong Buy | Strong Buy | Strong Buy | Strong Buy | (Buy-ish) |
-| Avg price target | $299 (+46%) | $468 (+10%) | $1,702 (-9%) | $517 (-9%) | $749 (+23%) |
+| Metric | **NVDA** | **AVGO** | **TSM** | **GEV** | **ASML** | **FN** | **AMAT** |
+|---|--:|--:|--:|--:|--:|--:|--:|
+| Price | $205 | $382 | $424 | $941 | $1,864 | $611 | $567 |
+| Market cap | $5.0T | $1.8T | $2.2T | $253B | $718B | $22B | $450B |
+| **Forward P/E** | **16×** | **20×** | 22× | 38× | 39× | 35× | 35× |
+| PEG (P/E ÷ growth) | **0.63** | **0.69** | 1.32 | 1.63 | 2.75 | — | 1.89 |
+| Revenue growth (yoy) | **+85%** | +48% | +35% | +16% | +13% | +39% | +11% |
+| Gross margin | 74% | **76%** | 62% | 20% | 53% | 12% | 49% |
+| Operating margin | **66%** | 49% | 58% | 6% | 36% | 10% | 32% |
+| Net margin | **63%** | 39% | 47% | 24% | 30% | 10% | 29% |
+| Return on equity | **114%** | 37% | 36% | **76%** | 52% | 20% | 40% |
+| FCF (annual) | **$46B** | $27B | $30B | $9B | $8B | −$0.1B | $3B |
+| Net cash / (debt) | +$40B | **−$45B** | +$63B | +$6B | +$6B | +$1B | +$1B |
+| Analyst view | Strong Buy | Strong Buy | Strong Buy | Buy | Strong Buy | — | Strong Buy |
+| Avg price target | $299 (+46%) | **$522 (+37%)** | $468 (+10%) | $1,212 (+29%) | $1,702 (−9%) | $749 (+23%) | $517 (−9%) |
 
-**How to read this:** the lower the Forward P/E and PEG, the "cheaper" the stock relative to
-its profits/growth. NVDA is both the **fastest-growing AND the cheapest** on these measures —
-an unusual combination. ASML and AMAT are the most expensive and slowest-growing right now,
-and analysts' average targets sit *below* today's price (they've run up a lot recently).
+**How to read this:** Lower Forward P/E and PEG = cheaper relative to profits and growth.
+NVDA and AVGO are the standouts — both cheap, both fast-growing, both with strong margins.
+ASML and AMAT targets are *below* today's price (they've already run up a lot). GEV has
+thin margins (20% gross) but is a fundamentally different type of business.
 
 ---
 
@@ -73,74 +91,84 @@ and analysts' average targets sit *below* today's price (they've run up a lot re
 
 | | **Bull case (why it goes up)** | **Bear case (the risk)** |
 |---|---|---|
-| **NVDA** | Owns AI, 63% margins, software lock-in, still cheap on earnings | AI spending could slow; customers building their own chips; very volatile (beta 2.2) |
-| **TSM** | Indispensable to everyone, huge moat, reasonable price | **Taiwan/China geopolitical risk** is the big one |
-| **ASML** | Real monopoly, no competitor possible | Expensive; lumpy orders; China export bans |
-| **AMAT** | Broad, steady, every factory needs it | Overbought right now (RSI 77, near 52-wk high); slower growth |
-| **FN** | AI networking boom, NVIDIA's partner | Tiny margins (12%), customer concentration, assembly is low-moat |
+| **NVDA** | Owns AI via CUDA, 63% net margins, software lock-in, cheapest on earnings | AI spending slows; customers build own chips; very volatile (beta 2.2) |
+| **AVGO** | Custom AI chips growing +48%, VMware gives software stability, biggest pullback = best entry | $45B net debt from VMware; NVDA could eat its AI chip share |
+| **TSM** | Irreplaceable foundry, wins whoever wins AI chip war | **Taiwan/China geopolitical risk** — the single biggest tail risk |
+| **GEV** | AI data center power demand is structural, multi-year order backlog | Low margins, Fwd PE 38× expensive for 16% growth, not an AI-pure play |
+| **ASML** | True monopoly, no competitor possible | Expensive, lumpy orders, China export bans, targets below price |
+| **FN** | AI networking boom, NVIDIA's partner | Tiny 12% margins, customer concentration, assembly = no moat |
+| **AMAT** | Broad, steady, every factory needs it | **Overbought** (RSI 77), at 52-wk high, targets below price |
 
 ---
 
-## 4. 🏆 If you can only pick ONE: **TSMC (TSM)**
+## 4. 🏆 Rankings — Best to Worst single investment
 
-For a single, long-term, "buy and hold and sleep at night" investment, **TSMC is the best
-all-around choice**, with **NVIDIA as the higher-reward / higher-risk alternative.**
+### 🥇 #1 NVDA — Best overall right now
+Fastest-growing AND cheapest on forward earnings (P/E 16×, PEG 0.63). $46B FCF per year.
+At technical support (RSI 42, 50-day MA). Down 13% from highs. 95% of analysts say Buy.
+Mean target $299 (+46%). **Buyable right now.**
 
-**Why TSMC wins as the single pick:**
-1. **It wins no matter who wins.** NVIDIA, Apple, AMD, Google — they all *must* use TSMC to
-   build their chips. You don't have to guess which chip designer comes out on top; TSMC
-   collects either way. That's the safest way to own "the AI trade."
-2. **Widest, most durable moat.** Only TSMC can make the most advanced chips at massive
-   scale. Competitors (Intel, Samsung) are years behind.
-3. **Excellent quality at a fair price.** 47% net margins, 36% ROE, +35% growth — yet only a
-   ~22 forward P/E. That is a far better value than ASML (39) or AMAT (35).
-4. **The one big risk to accept:** Taiwan/China geopolitics. This is real — if you can't
-   stomach that tail risk, NVIDIA is the better single pick.
+### 🥈 #2 AVGO — The best new addition
+The hidden gem. **Highest gross margin of all 7 (76%)**, nearly as cheap as NVDA on a
+growth basis (PEG 0.69, Fwd PE 20×), and down **23% from its 52-week high** — the biggest
+pullback of any stock in this group. Analyst mean target $522 is the highest absolute
+upside (+37%) of all 7. Custom AI chips for Google/Meta/Apple give it a different angle
+from NVDA. Only catch: $45B net debt from VMware — manageable at $27B/year FCF.
+**Buyable right now near $370–400.**
 
-**Why NOT the others as the single pick:**
-- **NVDA** — Honestly the most *tempting* (cheapest on forward earnings at P/E 16, PEG 0.63,
-  85% growth). If you want maximum upside and can handle a wild ride, pick this instead. It's
-  1A to TSMC's 1. The reason it's not my #1 "safe" pick: it's a one-product story riding one
-  spending wave, and it's the most volatile.
-- **ASML** — Wonderful monopoly but **expensive** and analysts' targets are *below* today's
-  price. Great on a dip, not here.
-- **AMAT** — Solid but **overbought right now** (RSI 77, sitting at its 52-week high) and
-  growing slowest. Wait for a pullback.
-- **FN** — Smallest, thinnest margins (12%), and just an assembler with a low moat. Fun
-  AI-networking play but the lowest-quality business of the five.
+### 🥉 #3 TSM — Best quality business, slightly wrong price
+Deepest moat (irreplaceable foundry), cleanest balance sheet (+$63B net cash), wins
+regardless of which chip designer prevails. Down only 6% from highs though, and 8% above
+our intrinsic fair value ($390). Great company — **wait for $370–390.**
 
-> **One-line verdict:** Best single pick = **TSMC** (highest quality-per-dollar with the
-> widest moat). Aggressive alternative = **NVIDIA** (cheapest vs its growth, biggest upside,
-> biggest swings).
+### #4 GEV — Diversification play, not a semiconductor
+Completely different industry. GEV wins from AI's insatiable power demand — every ChatGPT
+query, every image generated burns electricity, and GEV builds what generates it. Down 20%
+from highs, RSI 36 (near oversold), analyst target $1,212 (+29%). Thin margins today but
+expanding rapidly as its massive order backlog converts to revenue. Good **portfolio
+diversifier** if you want exposure beyond semiconductors. Entry: **$860–910.**
+
+### #5 ASML — World-class monopoly, wrong price
+Unique business with zero competition in EUV machines. But analyst targets are −9% below
+today's price and it's near all-time highs. **Wait for $1,550–1,650.**
+
+### #6 FN — High-risk small bet
+Small assembler, negative FCF, 12% gross margins. Only for those who specifically want
+leveraged AI networking exposure. Entry: **$540–580.**
+
+### #7 AMAT — Great company, terrible timing
+Near its all-time high (RSI 77, overbought), with analyst mean target −9% below price.
+Don't buy now — **wait for $460–490.**
+
+> **If you pick ONE:** NVDA.
+> **If you pick TWO:** NVDA + AVGO — complementary AI exposure (GPU compute vs custom ASICs), both cheap, both at pullback entries.
+> **If you pick THREE:** Add TSM on a dip to $370–390.
 
 ---
 
 ## 5. Best entry prices (where to buy)
 
-Based on current technicals (support levels, moving averages, 52-week ranges) and valuation.
-"Good entry" = a sensible buy zone; "Great entry" = a deeper pullback worth waiting for.
-
-| Stock | Price now | RSI | Status | **Good entry** | **Great entry (on a dip)** |
+| Stock | Price now | RSI | Status | **Good entry** | **Great entry (deeper dip)** |
 |---|--:|--:|---|---|---|
-| **TSM** 🏆 | $424 | 57 | Near highs, healthy | **$380–400** (50-day support) | $330–360 (200-day) |
-| **NVDA** | $205 | 42 | At support, not overbought | **$185–205** (buyable now) | $165–175 (recent low) |
-| **FN** | $611 | 38 | Pulled back, near oversold | **$540–580** | $490–510 (3-mo low) |
-| **ASML** | $1,864 | 67 | Getting overbought, pricey | **$1,550–1,650** | $1,250–1,400 |
-| **AMAT** | $567 | 77 | **Overbought — don't chase** | **$460–490** (50-day) | $380–410 |
+| **NVDA** 🥇 | $205 | 42 | At support — buyable | **$185–210** | $165–175 |
+| **AVGO** 🥈 | $382 | 43 | Big pullback — buyable | **$360–400** | $295–330 |
+| **TSM** 🥉 | $424 | 57 | Slightly rich — wait | **$370–395** | $330–355 |
+| **GEV** | $941 | 36 | Near oversold | **$860–910** | $800–840 |
+| **ASML** | $1,864 | 67 | Pricey — wait | **$1,550–1,650** | $1,250–1,380 |
+| **FN** | $611 | 38 | Pulled back | **$540–580** | $490–510 |
+| **AMAT** | $567 | 77 | **Overbought — avoid** | **$460–490** | $380–410 |
 
 **Notes:**
-- **TSM:** decent here, better on a dip toward $380–400. Don't need to wait for the deep zone.
-- **NVDA:** sitting right on its 50-day average (~$207) and *not* overbought — this is an
-  acceptable entry now; add more if it dips to the $165–175 area.
-- **AMAT & ASML:** both stretched and near 52-week highs — **patience pays**; wait for the
-  pullback zones rather than buying at the top.
-- **FN:** weakest chart (below its 50-day average) but near-oversold; only for those who want
-  the small-cap AI-networking exposure.
+- **NVDA & AVGO:** Both RSI ~42–43, well off highs, not overbought. These are the two actionable buys right now.
+- **TSM:** Decent business but needs to come down ~8% before it's at fair value. Be patient.
+- **GEV:** RSI 36 means it's getting oversold — if it dips to $860–910 that's a reasonable entry for a long-term hold.
+- **AMAT & ASML:** Both near 52-week highs with analyst targets *below* current price. Patience always beats chasing.
+- **FN:** Near oversold but lowest-quality business. Size small if at all.
 
 ---
 
 ### ⚠️ Important
-This is educational research, not financial advice. Valuations across this whole group are
-historically elevated — these are high-quality businesses but priced for a lot of good news.
-Consider buying in pieces (dollar-cost averaging) rather than all at once, size positions to
-your risk tolerance, and do your own due diligence.
+This is educational research, not financial advice. Valuations across most of this group
+are historically elevated — high-quality businesses priced for a lot of good news.
+Consider buying in pieces (dollar-cost averaging) rather than all at once, size positions
+to your risk tolerance, and always do your own due diligence before investing.
